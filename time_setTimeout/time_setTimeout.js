@@ -2,7 +2,7 @@
  * @由于个人水平有限, 难免有些错误, 还请指点:  
  * @Author: cpu_code
  * @Date: 2020-08-12 12:43:29
- * @LastEditTime: 2020-08-12 15:45:45
+ * @LastEditTime: 2020-08-12 16:23:06
  * @FilePath: \web\time_setTimeout\time_setTimeout.js
  * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
  * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
@@ -21,6 +21,7 @@ function timeout()
 
     document.getElementById("time").value = h+":"+m+":"+s;
     //指定的毫秒数后调用函数timeout
+    // 设置超时调用函数， 超时后自动调用所设置的函数
     stop_flag = setTimeout("timeout()", 1000);
 }
 
