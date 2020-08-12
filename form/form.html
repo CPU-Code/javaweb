@@ -1,0 +1,120 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-08-11 18:30:48
+ * @LastEditTime: 2020-08-12 09:02:35
+ * @FilePath: \web\form\form.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<html>
+    <head>
+        <title>
+            form
+        </title>
+    </head>
+
+    <body>
+        <label>
+            =============== 表格: &lt form &gt ========
+        </label>
+
+        <!-- name： 表单的名称 -->
+        <!-- method： 表单数据从浏览器传输到服务器的方法 -->
+        <!-- get： 将表单数据附加在 URL 地址后面， 长度不超过 8192 个字符,不具有保密性， 默认为 get
+             post： 将表单数据包含在表单的主体中， 一起传输到服务器上。 没有长度限制, 密文传输 -->
+        <!-- action： 用来定义表单处理程序 -->
+        <form name = "form" method = "get" action="/cgi-bin/a.cgi">
+            <br>
+            <!-- 表单输入标签, 常用的文本域、 按钮都是使用这个标签 -->
+            <!-- name 域名称
+                 type 域类型
+                 value 元素值 -->
+            <!-- type 属性值: text 文字域     password 密码域
+                             file 文件域     checkbox 复选框
+                             radio 单选框    button 普通按钮
+                             submit 提交按钮 reset 重置按钮
+                             hidden 隐藏域   image 图像域 -->
+            用户名:<input type="test" name="user">
+            <br>
+            <br>
+
+            密码: <input type="password" name="pwd">
+            <br>
+            <br>
+            
+            文件: <input type="file" name="file">
+            <br>
+            <br>
+
+            性别:
+            <br>
+
+            男: <input type="radio" name="sex" value="female" >
+            女: <input type="radio" name="sex" value="male">
+            <br>
+            <br>
+
+            我喜欢音乐: <input type="checkbox" name="music">
+            <br>
+
+            我喜欢技术: <input type="checkbox" name="technology">
+            <br>
+            <br>
+
+            <!-- 选择列表 <select><option> </option></select> , 单和列表是为了节省网页的空间而产生的 -->
+            <!-- name 菜单和列表的名称
+                 size 显示的选项数目
+                 multiple 列表中的选项为多项
+                 selected 默认被选中的选项(option 中的属性) -->
+            <select name="cars">
+                <option value="volvo">
+                    volvo
+                </option>
+
+                <option value="BMW" selected>
+                    BMW
+                </option>
+
+                <option value="infiniti">
+                    infiniti
+                </option>
+
+                <option value="Audi" >
+                    Audi
+                </option>
+
+            </select>
+            <br>
+            <br>
+
+            嘿嘿 cpucode
+            
+            <!-- 文本域 <textarea></textarea> , 用来制作多行文本输入域-->
+            <!-- name 文字域的名称
+                 rows 文字域的行数
+                 cols 文字域的列数 -->
+            <textarea name="comment" rows="3" cols="10"></textarea>
+            <br>
+            <br>
+
+            <input type="button" value="普通按钮">
+            <br>
+            <br>
+
+            <input type="hidden" name="fortest" value="testinfo">
+            <br>
+            <br>
+
+            <input type="image" src="./image/globe_yellow.png">
+            <br>
+            <br>
+
+            <input type="submit" value="提交">
+            <input type="reset" value="复位">
+            
+        </form>
+    </body>
+</html>
