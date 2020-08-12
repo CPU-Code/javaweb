@@ -12,6 +12,9 @@ HTML 语言 Javascript AJAX CGI 编程
 -   [x] [a_href_超链接标签](a_href)
 -   [x] [table_表格标签](table)
 -   [x] [form_表单](form)
+-   [x] [js_method_网页使用js脚本方式](js_method)
+-   [x] [js_window_浏览器对象](js_window)
+
 
 
 ------------
