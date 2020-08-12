@@ -2,7 +2,7 @@
  * @由于个人水平有限, 难免有些错误, 还请指点:  
  * @Author: cpu_code
  * @Date: 2020-08-12 10:52:58
- * @LastEditTime: 2020-08-12 12:39:41
+ * @LastEditTime: 2020-08-12 15:47:09
  * @FilePath: \web\js_date\js_date.js
  * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
  * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
@@ -10,7 +10,7 @@
  * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
  */
 var d = new Date();
-var hour = d.setHours();
+var hour = d.getHours();
 
 document.write("<br>");
 document.write("现在时间 :");
