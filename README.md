@@ -17,7 +17,8 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [js_window_浏览器对象](js_window)
 - [x] [js_document_文本对象](js_document)
 - [x] [js_date_Date时间](js_date)
-- [x] [time_setTimeout_Date时间动态变化](time_setTimeout)
+- [x] [time_setTimeout_time时间动态变化](time_setTimeout)
+- [x] [time_by_setinterval_time时间动态变化](time_by_setinterval)
 
 
 
