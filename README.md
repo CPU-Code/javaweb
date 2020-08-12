@@ -16,6 +16,6 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [js_method_网页使用js脚本方式](js_method)
 - [x] [js_window_浏览器对象](js_window)
 - [x] [js_document_文本对象](js_document)
-
+- [ ] [js_date_Date时间](js_date)
 
 ----------------
