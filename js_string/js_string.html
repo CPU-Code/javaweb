@@ -1,0 +1,71 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-08-12 16:56:12
+ * @LastEditTime: 2020-08-27 14:23:17
+ * @FilePath: \web\js_string\js_string.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<html>
+    <head>
+        <title> js_string </title>
+    </head>
+
+    <script type="text/javascript" src="js_string.js"></script>
+
+    <body>
+        原字符串: <input type="text" id="src" size="50">
+        <br>
+        <br>
+
+        处理方式：<input type="text" id="way" size=50>
+		<br>
+        <br>
+        
+        得到结果：<input type="text" id="dest" size=50>
+		<br>
+        <br>
+        
+        <input type="button" value="返回指定位置的字节" onclick="deal_string(1)">
+		<br>
+		  
+        <input type="button" value="检索字符串" onclick="deal_string(2)">
+        <br>
+
+        <input type="button" value="从起始索引号提取字符串中指定数目的字符" onclick="deal_string(3)">
+        <br>
+
+        <input type="bution" value="提取字符串中介于俩个指定下标之间的字符" onclick="deal_string(4)">
+        <br>
+        <br>
+
+		假设原字符串为：cpucode
+		<br>
+		
+		处理方式输入：0	
+		<br>
+		按下返回指定位置字符 , 则查找第二个字符，得到结果为：c
+		<br>
+		<br>
+      
+		处理方式输入：u
+		<br>
+		按下 检索字符串 , 则查找 w 在字符“cpucode”中的位置，得到结果为：2
+		<br>
+		<br>
+      
+		处理方式输入：1,3	
+		<br>
+		按下 从起始索引号提取字符串中指定数目的字符 , 获取从下标 1 开始后的 3 个字符，得到结果为：puc
+		<br>
+		<br>
+      
+		处理方式输入：1,4	
+		<br>	
+		按下 提取字符串中介于两个指定下标之间的字符 , 获取下标从 2 到 4 之间的（4-2=2）个字符，得到结果为：puc
+
+    </body>
+</html>

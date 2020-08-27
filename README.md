@@ -20,6 +20,6 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [time_setTimeout__time时间动态变化](time_setTimeout)
 - [x] [time_by_setinterval__time时间动态变化](time_by_setinterval)
 - [x] [js_math__计算](js_math)
-
+- [x] [js_string__String对象处理文本](js_string)
 
 ----------------
