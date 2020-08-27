@@ -22,5 +22,6 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [js_math__计算](js_math)
 - [x] [js_string__String对象处理文本](js_string)
 - [x] [js_printer__打印机输出](js_printer)
+- [x] [js_function__调用](js_function)
 
 ----------------
