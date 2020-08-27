@@ -2,7 +2,7 @@
  * @由于个人水平有限, 难免有些错误, 还请指点:  
  * @Author: cpu_code
  * @Date: 2020-08-12 16:31:36
- * @LastEditTime: 2020-08-12 16:55:03
+ * @LastEditTime: 2020-08-27 15:31:56
  * @FilePath: \web\js_math\js_math.js
  * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
  * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
@@ -19,7 +19,9 @@ function fun(deal_num)
         alert("输入数");
 
         document.getElementById("num1").value="";
-
+        document.getElementById("num2").value='';
+        document.getElementById("result").value='';
+        
         return;
     }
 
