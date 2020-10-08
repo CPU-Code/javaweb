@@ -8,7 +8,9 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 
 ## [html__](html)
 
-- [x] [first_html__第一个网页](html/first_html)
+- [x] [HelloWorld__第一个网页](html/helloworld)
+- [x] [first_html__图网页片](html/first_html)
+- [x] [text__文本标签](html/text)
 - [x] [meta__元信息](html/meta)
 - [x] [char__文字标签](html/char)
 - [x] [head_style__标题标签](html/head_style)
