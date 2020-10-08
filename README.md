@@ -13,6 +13,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [text__文本标签](html/text)
 - [x] [案例公司简历__case1](html/case1)
 - [x] [meta__元信息](html/meta)
+- [x] [image_label__图片标签](html/image_label)
 - [x] [char__文字标签](html/char)
 - [x] [head_style__标题标签](html/head_style)
 - [x] [a_href__超链接标签](html/a_href)
