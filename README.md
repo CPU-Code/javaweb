@@ -6,7 +6,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 
 ----------------
 
-## [html__](html)
+## [html](html)
 
 - [x] [HelloWorld__第一个网页](html/helloworld)
 - [x] [first_html__图网页片](html/first_html)
@@ -20,9 +20,10 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [a_href__超链接标签](html/a_href)
 - [x] [piece__块标签](html/piece)
 - [x] [table__表格标签](html/table)
+- [x] [table2__表格标签2](html/table2)
 - [x] [form__表单](html/form)
 
-## [css__](css)
+## [css](css)
 
 
 ## [javascript](javascript)

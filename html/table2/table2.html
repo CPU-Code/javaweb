@@ -1,0 +1,119 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-08 20:49:28
+ * @LastEditTime: 2020-10-08 22:24:24
+ * @FilePath: \web\html\table2\table2.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+        <title>cpucode表格2</title>
+    </head>
+
+    <body>
+
+        <!-- 定义表格
+            width：宽度
+			border：边框
+			cellpadding：定义内容和单元格的距离
+			cellspacing：定义单元格之间的距离。如果指定为0，则单元格的线会合为一条、
+			bgcolor：背景色
+			align：对齐方式
+        -->
+        <table border="1" width="50%" cellpadding="0" cellspacing="0" bgcolor="#dafa10" align="center">
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>成绩</th>
+            </tr>
+
+            <tr>
+                <th>1</th>
+                <th>cpucode</th>
+                <th>24</th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>cpu</th>
+                <th>33</th>
+            </tr>
+        </table>
+
+        <hr>
+
+        <table border="1" width="50%" cellpadding="0" cellspacing="0" bgcolor="#ff00ff" align="center">
+
+            <!-- 表格的头部分 -->
+            <thead>
+                <caption> 同学学习表 </caption>
+                <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>成绩</th>
+                </tr>
+            </thead>
+
+            <!-- 表格的体部分 -->
+            <tbody>
+
+                <!-- tr：定义行
+			        bgcolor：背景色
+                    align：对齐方式
+                -->
+                <tr bgcolor="#da11af" align="center">
+                    <td>1</td>
+                    <td>cpucode</td>
+                    <td>24</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>cpu</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+
+            <!-- 表格的脚部分 -->
+            <tfoot>
+                <tr>
+                    <td>3</td>
+                    <td>code</td>
+                    <td>11</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <hr>
+
+        <table border="1" width="50%" cellpaddin="0" cellspacing="0" bgcolor="#ad3300" align="center">
+            <tr>
+                <th rowspan="2">编号</th>
+                <th>姓名</th>
+                <th>成绩</th>
+            </tr>
+
+            <tr>
+                <td>cpucode</td>
+                <td>22</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+
+                <!-- td：定义单元格
+			        colspan：合并列
+                    rowspan：合并行 
+                -->
+                <td colspan="2"> cpu </td>
+            </tr>
+        </table>
+    </body>
+</html>
