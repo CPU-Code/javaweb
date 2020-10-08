@@ -16,6 +16,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [image_label__图片标签](html/image_label)
 - [x] [char__文字标签](html/char)
 - [x] [head_style__标题标签](html/head_style)
+- [x] [list_label__列表标签](html/list_label)
 - [x] [a_href__超链接标签](html/a_href)
 - [x] [table__表格标签](html/table)
 - [x] [form__表单](html/form)
