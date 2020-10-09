@@ -35,6 +35,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [internal__内部样式](css/internal/internal.html)
 - [x] [external__外部样式](css/external/external.html)
 - [x] [basic_choice__基础选择器](css/basic_choice/basic_choice.html)
+- [x] [expand_choice__扩展选择器](css/expand_choice/expand_choice.html)
 
 ---------------
 
