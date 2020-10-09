@@ -1,0 +1,51 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-09 16:07:42
+ * @LastEditTime: 2020-10-09 16:15:24
+ * @FilePath: \web\css\basic_choice\basic_choice.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+        <title>基本选择器</title>
+
+        <style>
+            .class1{
+                color:coral;
+            }
+
+            p{
+                color: brown;
+            }
+            #id1{
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- 
+            1. 基础选择器
+            1. id选择器：选择具体的id属性值的元素.建议在一个html页面中id值唯一
+                * 语法：#id属性值{}
+            2. 元素选择器：选择具有相同标签名称的元素
+                * 语法： 标签名称{}
+                * 注意：id选择器优先级高于元素选择器
+            3. 类选择器：选择具有相同的class属性值的元素。
+                * 语法：.class属性值{}
+                * 注意：类选择器选择器优先级高于元素选择器
+        -->
+        <div id="id1">cpucdoe id1</div>
+        <div class="class1">cpucode class1</div>
+
+        <p class="class2"> cpu class2</p>
+    </body>
+</html>
