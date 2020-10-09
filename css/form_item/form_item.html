@@ -2,7 +2,7 @@
  * @由于个人水平有限, 难免有些错误, 还请指点:  
  * @Author: cpu_code
  * @Date: 2020-10-09 13:51:24
- * @LastEditTime: 2020-10-09 14:29:05
+ * @LastEditTime: 2020-10-09 14:43:32
  * @FilePath: \web\css\form_item\form_item.html
  * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
  * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
@@ -19,23 +19,31 @@
     <body>
         <form action="#" method="get">
             <label for="username" > 用户名 </label>: 
+            <!-- text：文本输入框，默认值
+                    * placeholder：指定输入框的提示信息，当输入框的内容发生变化，会自动清空提示信息	 
+            -->
             <input type="text" name="username" placeholder="请输入用户名" id="username">
             <br/>
 
+            <!-- password：密码输入框 -->
             密码: <input type="password" name="password" placeholder="请输入密码">
             <br/>
             
+            <!-- radio:单选框 -->
             性别: <input type="radio" name="gender" value="male"> 男
                  <input type="radio" name="gender" value="female" checked> 女
             <br/>
 
+            <!--  checkbox：复选框 -->
             爱好: <input type="checkbox" name="hobby" value="shopping"> 购物
                   <input type="checkbox" name="hobby" value="java"> java
             <br/>
 
+            <!-- file：文件选择框 -->
             图片: <input type="file" name="file">
             <br/>
 
+            <!-- hidden：隐藏域，用于提交一些信息  -->
             隐藏域: <input type="hidden" name="id" value="cpucode">
             <br/>
 
@@ -61,14 +69,24 @@
                 </select>
             <br/>
 
+            <!-- textarea：文本域
+			    * cols：指定列数，每一行有多少个字符
+                * rows：默认多少行
+             -->
             自我描述: <textarea cols="20" rows="15" name="des"></textarea>
             <br/>
 
+            <!-- submit：提交按钮。可以提交表单 -->
             <input type="submit" value="登录">
             <br/>
+
+            <!--  button：普通按钮 -->
             <input type="button" value="按键">
             <br/>
             
+            <!-- image：图片提交按钮
+                    * src属性指定图片的路径	 
+            -->
             <input type="image" src="image/regbtn.jpg">
 
         </form>
