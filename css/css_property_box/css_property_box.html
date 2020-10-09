@@ -1,0 +1,71 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-09 17:00:37
+ * @LastEditTime: 2020-10-09 17:47:11
+ * @FilePath: \web\css\css_property_box\css_property_box.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+        <title>css属性 盒子模型</title>
+
+        <style>
+            div{
+                /* border：设置边框，符合属性 */
+                border: 1px solid blue;
+                width: 100px;
+            }
+
+            .div1{
+
+                /* width：宽度
+		           height：高度 */
+                width: 200px;
+                height: 300px;
+
+                /*外边距*/
+                /* margin: 50px; */
+            }
+
+            .div2{
+                width: 200px;
+                height: 100px;
+
+                /* box-sizing: border-box;  设置盒子的属性，让width和height就是最终盒子的大小 */
+                box-sizing: border-box;
+            }
+
+            /* float：浮动
+			    left
+			     right */
+            .div3{
+                float: left;
+            }
+
+            .div4{
+                float: left;
+            }
+
+            .div5{
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="div1">
+            div1
+            <div class="div2">div2</div>
+        </div>
+
+        <div class="div3"> div3 </div>
+        <div class="div4">div4 </div>
+        <div class="div5"> div5 </div>
+    </body>
+</html>
