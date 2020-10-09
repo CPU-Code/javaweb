@@ -38,6 +38,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [expand_choice__扩展选择器](css/expand_choice/expand_choice.html)
 - [x] [css_property__css属性](css/css_property/css_property.html)
 - [x] [css_property_box__css属性_盒子模型](css/css_property_box/css_property_box.html)
+- [x] [registration_page_css__注册页面](css/registration_page_css/registration_page_css.html)
 
 ---------------
 
