@@ -30,6 +30,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 
 - [x] [form__表单标签](css/form/form.html)
 - [x] [form_item__表单项标签](css/form_item/form_item.html)
+- [x] [registration_page__注册页面html](css/registration_page/registration_page.html)
 
 ---------------
 
