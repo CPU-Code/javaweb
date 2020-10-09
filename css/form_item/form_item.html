@@ -1,0 +1,76 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-09 13:51:24
+ * @LastEditTime: 2020-10-09 14:29:05
+ * @FilePath: \web\css\form_item\form_item.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+        <title>cpucode 表单项 </title>
+    </head>
+
+    <body>
+        <form action="#" method="get">
+            <label for="username" > 用户名 </label>: 
+            <input type="text" name="username" placeholder="请输入用户名" id="username">
+            <br/>
+
+            密码: <input type="password" name="password" placeholder="请输入密码">
+            <br/>
+            
+            性别: <input type="radio" name="gender" value="male"> 男
+                 <input type="radio" name="gender" value="female" checked> 女
+            <br/>
+
+            爱好: <input type="checkbox" name="hobby" value="shopping"> 购物
+                  <input type="checkbox" name="hobby" value="java"> java
+            <br/>
+
+            图片: <input type="file" name="file">
+            <br/>
+
+            隐藏域: <input type="hidden" name="id" value="cpucode">
+            <br/>
+
+            取色器: <input type="color" name="color">
+            <br/>
+
+            生日: <input type="date" name="birthday">
+            <br/>
+
+            生日: <input type="datetime-local" name="birthday">
+            <br/>
+
+            邮件: <input type="email" name="email">
+            <br/>
+
+            年龄: <input type="number" name="age">
+            <br/>
+
+            省份: <select name="province">
+                    <option value="">--请选择--</option>
+                    <option value="1">北京</option>
+                    <option value="2" selected>广东</option>
+                </select>
+            <br/>
+
+            自我描述: <textarea cols="20" rows="15" name="des"></textarea>
+            <br/>
+
+            <input type="submit" value="登录">
+            <br/>
+            <input type="button" value="按键">
+            <br/>
+            
+            <input type="image" src="image/regbtn.jpg">
+
+        </form>
+    </body>
+</html>
