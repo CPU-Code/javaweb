@@ -1,0 +1,45 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-14 23:59:11
+ * @LastEditTime: 2020-10-15 11:54:34
+ * @FilePath: \web\javascript\js_99.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+        <title> 99 乘法表</title>
+        <style>
+            td{
+                border: 1px solid;
+            }
+        </style>
+
+        <script>
+            document.write("<table align='center'>");
+
+            //1.完成基本的for循环嵌套，展示乘法表
+            for(var i = 1; i <= 9; i++){
+                document.write("<tr>");
+                for(var j = 1; j <= i; j++){
+                    document.write("<td>");
+
+                    //输出  1 * 1 = 1
+                    document.write(i + "*" + j + " = " + (i * j) + "&nbsp;&nbsp;&nbsp;");
+                    document.write("</td>");
+                }
+                /*//输出换行
+                document.write("<br>");*/
+                document.write("</tr>");
+            }
+
+            //2.完成表格嵌套
+            document.write("</table>");
+        </script>
+    </head>
+</html>
