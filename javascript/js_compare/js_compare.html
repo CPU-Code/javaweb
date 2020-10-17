@@ -1,0 +1,37 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-17 22:57:58
+ * @LastEditTime: 2020-10-17 23:02:19
+ * @FilePath: \web\javascript\js_compare\js_compare.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>比较运算符</title>
+        <script>
+            /*
+            * 比较运算符:
+            *   * 比较方式
+            *       1. 类型相同：直接比较
+            *           * 字符串：按照字典顺序比较。按位逐一比较，直到得出大小为止。
+            *       2. 类型不同：先进行类型转换，再比较
+            *           * ===：全等于。在比较之前，先判断类型，如果类型不一样，则直接返回false
+            */
+
+            document.write((3 > 4) + "<br>");
+            document.write(("abc" < "aaa") + "<br>");
+            document.write(("111" == 111) + "<br>");
+            document.write(("111" === 111) + "<br>");
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>
