@@ -1,0 +1,48 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-16 17:03:55
+ * @LastEditTime: 2020-10-16 17:47:01
+ * @FilePath: \web\javascript\js_typeof\js_typeof.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>变量类型</title>
+
+        <script>
+            var num = 1;
+            var num2 = 1.2;
+            var num3 = NaN;
+
+            document.write(num + "---" + typeof(num) + "<br>");
+            document.write(num2 + "---" + typeof(num2) + "<br>");
+            document.write(num3 + "---" + typeof(num3) + "<br>");
+
+            //定义string类型
+            var str = "abb";
+            var str2 = "sb";
+ 
+            document.write(str + "---" + typeof(str) + "<br>");
+            document.write(str2 + "---" + typeof(str2) + "<br>");
+
+            //定义boolean
+            var flag = true;
+            document.write(flag + "---" + typeof(flag) + "<br>");
+
+            //定义null, undefined
+            var obj = null;
+            var obj2 = undefined;
+            var obj3;
+            
+            document.write(obj + "---" + typeof(obj) + "<br>");
+            document.write(obj2 + "---" + typeof(obj2) + "<br>");
+            document.write(obj3 + "---" + typeof(obj3) + "<br>");
+        </script>
+    </head>
+</html>
