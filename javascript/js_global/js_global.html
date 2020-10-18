@@ -1,0 +1,66 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-18 11:42:57
+ * @LastEditTime: 2020-10-18 12:56:23
+ * @FilePath: \web\javascript\js_global\js_global.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+        <title>gloabal对象</title>
+        <script>
+            /*
+            Global
+                1. 特点：全局对象，这个Global中封装的方法不需要对象就可以直接调用。  方法名();
+            */
+
+            var str = "https://github.com/CPU-Code/呵呵";
+            
+            // encodeURI():url编码
+            var encode = encodeURI(str);
+
+            document.write(encode + "<br>");
+            // decodeURI():url解码
+            var s = decodeURI(encode);
+            document.write(s + "<br>");
+
+            var str1 = "https://github.com/CPU-Code/呵呵";
+            //encodeURIComponent():url编码,编码的字符更多
+            var encode1 = encodeURIComponent(str1);
+            document.write(encode1 + "<br>");
+
+            //decodeURIComponent():url解码
+            var s1 = decodeURIComponent(encode1);
+            document.write(s1 + "<br>");
+
+            var str = "11";
+            // parseInt():将字符串转为数字
+            // 逐一判断每一个字符是否是数字，直到不是数字为止，将前边数字部分转为number
+            var number = parseInt(str);
+            number += 1;
+            document.write(number + "<br>");
+
+            var a = NaN;
+
+            document.write("a == NaN =" + a == NaN );
+            document.write("<br>");
+            // isNaN():判断一个值是否是NaN
+            // NaN六亲不认，连自己都不认。NaN参与的==比较全部问false
+            document.write("isNaN(a) = " + isNaN(a) + "<br>");
+
+            var jscode = "alert(cpucode);";
+            // eval():讲 JavaScript 字符串，并把它作为脚本代码来执行
+            eval(jscode);
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
