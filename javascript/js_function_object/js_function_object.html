@@ -2,7 +2,7 @@
  * @由于个人水平有限, 难免有些错误, 还请指点:  
  * @Author: cpu_code
  * @Date: 2020-10-15 12:18:26
- * @LastEditTime: 2020-10-15 18:51:52
+ * @LastEditTime: 2020-10-18 11:19:56
  * @FilePath: \web\javascript\js_function_object\js_function_object.html
  * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
  * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
@@ -39,26 +39,55 @@
                         4. 在方法声明中有一个隐藏的内置对象（数组），arguments,封装所有的实际参数
                     5. 调用：
                         方法名称(实际参数列表);
-            *
             */
 
                 //1.创建方式1
                 var fun1 = new Function("a", "b", "alert(a);");
 
                 //调用方法
-                //fun1(13,33);
-                //alert(fun1.length);
+                fun1(13,33);
+                document.write("fun1.length = " + fun1.length + "<br>");
+
+                document.write("<hr>");
 
                 //2. 创建方式2
                 function fun2(a, b){
-                    alert(a + b);
+                    var sum = a + b;
+                    document.write(sum + "<br>");
                 }
 
-                //fun2(1, 10);
+                fun2(1, 10);
+
+                document.write("<hr>");
 
                 var fun3 = function(a, b){
-                    alert(a + b);
+                    document.write(a + b + "<br>");
                 }
+
+                document.write("fun3.length = " + fun3.length + "<br>");
+                fun3(3,4);
+
+                document.write("<hr>");
+                
+                fun2 = function(a , b){
+                    alert(a - b);
+                }
+                
+/*                 function fun2(a , b){
+                    //alert(a - b);
+                    document.write(a + "<br>");
+                    document.write(b + "<br>");
+                } */
+
+                fun2(3,4);
+
+                document.write("<hr>");
+                
+                //方法调用
+                //fun2(1,2);
+                //fun2(1);
+                //fun2();
+                //fun2(1,2,3);
 
                 //alert(fun3.length);
                 //fun3(3,3);
@@ -75,7 +104,7 @@
                 }
 
                 var sum = add(1, 2, 3, 4);
-                alert(sum);
+                document.write("sum = " + sum + "<br>");
                 add(1,3);
 
         </script>
