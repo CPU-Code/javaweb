@@ -1,0 +1,39 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-18 21:29:12
+ * @LastEditTime: 2020-10-18 21:34:25
+ * @FilePath: \web\javascript\js_event_binding\js_event_binding.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>事件绑架</title>
+    </head>
+
+    <body>
+        <img id="light" src="image/off.gif" onclick="fun();">
+        <img id="light2" src="image/off.gif">
+        
+        <script>
+            function fun() {
+                alert('被点了');
+                alert('又被点了');
+            }
+
+            function fun2() {
+                alert("老点了");
+            }
+
+            //1.获取light2对象
+            var light2 = document.getElementById("light2");
+            //2.绑定事件
+            light2.onclick = fun2;
+        </script>
+    </body>
+</html>
