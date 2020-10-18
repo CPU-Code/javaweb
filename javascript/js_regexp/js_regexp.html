@@ -1,0 +1,50 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-15 19:55:50
+ * @LastEditTime: 2020-10-18 11:42:22
+ * @FilePath: \web\javascript\js_regexp\js_regexp.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp对象</title>
+    <script >
+
+        /*
+
+           2. 正则对象：
+                1. 创建
+                    1. var reg = new RegExp("正则表达式");
+                    2. var reg = /正则表达式/;
+                2. 方法
+                    1. test(参数):验证指定的字符串是否符合正则定义的规范
+         */
+
+        //1.
+        var reg = new RegExp("^\\w{6,12}$");
+        //2.
+        var reg2= /^\w{6,12}$/;
+
+        document.write(reg + "<br>");
+        document.write(reg2 + "<br>");
+
+        var username = "cpucode";
+
+        //验证
+        var flag = reg.test(username);
+        document.write(flag + "<br>");
+
+        var flag2 = reg2.test(username);
+        document.write(flag2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
