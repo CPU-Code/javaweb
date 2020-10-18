@@ -68,7 +68,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [js_switch__js_switch语法](javascript/js_switch/js_switch.html)
 - [x] [js_while__js_while语法](javascript/js_while/js_while.html)
 - [x] [js_99__js_99乘法](javascript/js_99/js_99.html)
-- [ ] [js_function_object__function对象](javascript/js_function_object/js_function_object.html)
+- [x] [js_function_object__function对象](javascript/js_function_object/js_function_object.html)
 - [x] [js_array__js_array对象](javascript/js_array/js_array.html)
 - [x] [js_Dat_object__js_日期对象](javascript/js_Dat_objecte/js_Dat_objecte.html)
 - [x] [js_math_object__js_math日期对象](javascript/js_js_math_objectmath/js_math_object.html)
