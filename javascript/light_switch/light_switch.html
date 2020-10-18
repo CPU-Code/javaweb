@@ -1,0 +1,52 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-18 22:19:52
+ * @LastEditTime: 2020-10-18 22:24:28
+ * @FilePath: \web\javascript\light_switch\light_switch.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>电灯开关</title>
+    </head>
+
+    <body>
+        <img id="light" src="image/off.gif">
+        <script>
+            /*
+            分析：
+                1.获取图片对象
+                2.绑定单击事件
+                3.每次点击切换图片
+                    * 规则：
+                        * 如果灯是开的 on,切换图片为 off
+                        * 如果灯是关的 off,切换图片为 on
+                    * 使用标记flag来完成
+            */
+            //1.获取图片对象
+            var light = document.getElementById("light");
+            //代表灯是灭的。 off图片
+            var flag = false;
+
+            //2.绑定单击事件
+            light.onclick = function(){
+                if(flag){
+                    //判断如果灯是开的，则灭掉
+                    light.src = "image/off.gif";
+                    flag = false;
+                }
+                else{
+                    //如果灯是灭的，则打开
+                    light.src = "image/on.gif";
+                    flag = true;
+                }
+            }
+        </script>
+    </body>
+</html>
