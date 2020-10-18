@@ -74,6 +74,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [js_math_object__js_math日期对象](javascript/js_js_math_objectmath/js_math_object.html)
 - [x] [js_regexp__js_regexp对象](javascript/js_regexp/js_regexp.html)
 - [x] [js_global__js_global对象](javascript/js_global/js_global.html)
+- [x] [js_DOM_get_element__dom_获取元素对象](javascript/js_DOM_get_element/js_DOM_get_element.html)
 
 ------------
 
