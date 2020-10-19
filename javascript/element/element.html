@@ -1,0 +1,42 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-19 22:33:38
+ * @LastEditTime: 2020-10-19 22:40:23
+ * @FilePath: \web\javascript\element\element.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>element对象</title>
+    </head>
+
+    <body>
+        <a>点点</a>
+        <input type="button" id="btn_set" value="设置属性">
+        <input type="button" id="btn_remove" value="删除属性">
+
+        <script>
+            //获取btn
+            var btn_set = document.getElementById("btn_set");
+            btn_set.onclick = function(){
+                //1.获取a标签
+                var element_a = document.getElementsByTagName("a")[0];
+                element_a.setAttribute("href","https://blog.csdn.net/qq_44226094");
+            }
+
+            //获取btn
+            var btn_remove = document.getElementsById("btn_remove");
+            btn_remove.onclick = function(){
+                //1.获取a标签
+                var element_a = document.getElementsByTagName("a")[0];
+                element_a.removeAttribute("href");
+            }
+        </script>
+    </body>
+</html>
