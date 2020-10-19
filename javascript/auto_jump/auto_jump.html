@@ -1,0 +1,65 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-19 16:24:58
+ * @LastEditTime: 2020-10-19 16:32:19
+ * @FilePath: \web\javascript\auto_jump\auto_jump.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>自动跳转</title>
+
+        <style>
+            p{
+                text-align: center;
+            }
+
+            spen{
+                color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>
+            <span id="time">2</span>秒之后，自动跳转到首页
+        </p>
+
+        <script>
+            /*
+                分析：
+                1.显示页面效果  <p>
+                2.倒计时读秒效果实现
+                    2.1 定义一个方法，获取span标签，修改span标签体内容，时间--
+                    2.2 定义一个定时器，1秒执行一次该方法
+                3.在方法中判断时间如果<= 0 ，则跳转到首页
+
+            */
+            // 2.倒计时读秒效果实现
+
+            var second = 2;
+            var time = document.getElementById("time");
+
+            //定义一个方法，获取span标签，修改span标签体内容，时间--
+            function showTime() {
+                second--;
+                //判断时间如果<= 0 ，则跳转到首页
+                if(second <= 0){
+                    //跳转到首页
+                    location.href = "https://blog.csdn.net/qq_44226094";
+                }
+
+                time.innerHTML = second + "";
+            }
+            
+            //设置定时器，1秒执行一次该方法
+            setInterval(showTime, 1000);
+        </script>
+    </body>
+</html>

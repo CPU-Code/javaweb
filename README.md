@@ -80,6 +80,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [window_object__window对象](javascript/window_object/window_object.html)
 - [x] [cycle_diagram__轮播图](javascript/cycle_diagram/cycle_diagram.html)
 - [x] [location__location对象](javascript/location/location.html)
+- [x] [auto_jump__自动跳转](javascript/auto_jump/auto_jump.html)
 
 ------------
 
