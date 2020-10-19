@@ -1,0 +1,57 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-19 17:16:39
+ * @LastEditTime: 2020-10-19 17:45:23
+ * @FilePath: \web\javascript\history\history2.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>histroy2</title>
+    </head>
+
+    <body>
+        <img id="image" src="image/banner_1.jpg" width="100%">
+        <input type="button" id="back" value="后退">
+
+        <script>
+
+            /*
+            分析：
+                1.在页面上使用img标签展示图片
+                2.定义一个方法，修改图片对象的src属性
+                3.定义一个定时器，每隔1秒调用方法一次。
+             */
+
+            //修改图片src属性
+            var number = 1;
+
+            function fun(){
+                number++;
+                //判断number是否大于3
+                if(number > 3){
+                    number = 1;
+                }
+                //获取img对象
+                var img = document.getElementById("image");
+                img.src = "image/banner_"+ number + ".jpg";
+            }
+            //2.定义定时器
+            setInterval(fun, 1000);
+            //1.获取按钮
+            var back = document.getElementById("back");
+            //2.绑定单机事件
+            back.onclick = function(){
+                //后退
+                // history.back();
+                history.go(-1);
+            }
+        </script>
+    </body>
+</html>
