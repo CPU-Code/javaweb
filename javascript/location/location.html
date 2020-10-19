@@ -1,0 +1,46 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-19 16:11:36
+ * @LastEditTime: 2020-10-19 16:17:54
+ * @FilePath: \web\javascript\location\location.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+        <title>lacation对象</title>
+    </head>
+
+    <body>
+        <input type="button" id="btn" value="刷新">
+        <input type="button" id="goItcast" value="去github">
+        
+        <script>
+            //reload方法，定义一个按钮，点击按钮，刷新当前页面
+            //1.获取按钮
+            var btn = document.getElementById("btn");
+            //2.绑定单击事件
+            btn.onclick = function(){
+                //3.刷新页面
+                location.reload();
+            }
+            //获取href
+            var href = location.href;
+            alert(href);
+            
+            //点击按钮，去访问https://github.com/CPU-Code官网
+            //1.获取按钮
+            var goItcast = document.getElementById("goItcast");
+            //2.绑定单击事件
+            goItcast.onclick = function(){
+                //3.去访问https://github.com/CPU-Code官网
+                location.href = "https://github.com/CPU-Code";
+            }
+        </script>
+    </body>
+</html>
