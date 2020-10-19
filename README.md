@@ -78,6 +78,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [js_event_binding__事件绑定](javascript/js_event_binding/js_event_binding.html)
 - [x] [light_switch__电灯开关](javascript/light_switch/light_switch.html)
 - [x] [window_object__window对象](javascript/window_object/window_object.html)
+- [x] [cycle_diagram__轮播图](javascript/cycle_diagram/cycle_diagram.html)
 
 ------------
 
