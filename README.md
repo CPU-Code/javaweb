@@ -82,6 +82,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [location__location对象](javascript/location/location.html)
 - [x] [auto_jump__自动跳转](javascript/auto_jump/auto_jump.html)
 - [x] [history__history对象](javascript/history/history.html)
+- [x] [document__document对象](javascript/document/document.html)
 
 ------------
 
