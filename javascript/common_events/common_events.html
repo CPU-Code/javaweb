@@ -1,0 +1,126 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-20 21:39:17
+ * @LastEditTime: 2020-10-20 22:44:48
+ * @FilePath: \web\javascript\common_events\common_events.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>常见事件</title>
+
+        <script>
+            /*
+            常见的事件：
+                1. 点击事件：
+                    1. onclick ：单击事件
+                    2. ondblclick ：双击事件
+            */
+
+            /*
+            //2.加载完成事件  onload
+            3. 加载事件：
+                    1. onload ：一张页面或一幅图像完成加载。
+            */
+            window.onload = function(){
+                /*
+                //1.失去焦点事件
+                2. 焦点事件
+                    1. onblur ：失去焦点。
+                        * 一般用于表单验证
+                    2. onfocus :元素获得焦点。
+                */
+                document.getElementsById("username").onblur = function(){
+                    alert("失去焦点");
+                }
+                /*
+                4. 鼠标事件：
+                    1. onmousedown	鼠标按钮被按下。
+                        * 定义方法时，定义一个形参，接受event对象。
+                        * event对象的button属性可以获取鼠标按钮键被点击了。
+                    2. onmouseup	鼠标按键被松开。
+                    3. onmousemove	鼠标被移动。
+                    4. onmouseover	鼠标移到某元素之上。
+                    5. onmouseout	鼠标从某元素移开。
+                */
+                document.getElementById("username").onmouseover = function(){
+                    alert("鼠标来了");
+                }
+
+                document.getElementById("username").onmousedown = function(event){
+                    alert(event.button);
+                }
+
+                /*
+                5. 键盘事件：
+                    1. onkeydown	某个键盘按键被按下
+                    2. onkeyup		某个键盘按键被松开。
+                    3. onkeypress	某个键盘按键被按下并松开。
+                    */
+                document.getElementById("username").onkeydown = function(event){
+                    if(event.keyCode == 13){
+                        alert("提交表单");
+                    }
+                }
+
+                /*
+                6. 选择和改变
+                    1. onchange	域的内容被改变。
+                    2. onselect	文本被选中。
+                */
+                document.getElementById("username").onchange = function(event){
+                    alert("改变了");
+                }
+
+                document.getElementById("city").onchange = function(event){
+                    alert("改变");
+                }
+
+                /* 
+                7. 表单事件：
+                    1. onsubmit	确认按钮被点击。
+                        * 可以阻止表单的提交
+                            * 方法返回false则表单被阻止提交。
+                    2. onreset	重置按钮被点击。
+                */
+                document.getElementById("form").onsubmit = function(){
+                    //校验用户名格式是否正确
+                    var flag = false;
+
+                    return flag;
+                }
+            }
+
+            function checkForm() {
+                return true;
+            }
+
+        </script>
+    </head>
+
+    <body>
+        
+        <!--
+        function fun(){
+            return  checkForm();
+        }
+        -->
+
+        <form action="#" id="from" onclick="return checkForm();">
+            <input name="username" id="username">
+            <select id="city">
+                <option>请选择</option>
+                <option>长沙</option>
+                <option>深圳</option>
+            </select>
+
+            <input type="submit" value="提交">
+        </form>
+    </body>
+</html>

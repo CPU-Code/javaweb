@@ -88,6 +88,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [x] [dynamic_table__动态表格](javascript/dynamic_table/dynamic_table.html)
 - [x] [DOM_innerHTML__](javascript/DOM_innerHTML/DOM_innerHTML.html)
 - [ ] [DOM_control_style__控制样式](javascript/DOM_control_style/DOM_control_style.html)
+- [ ] [common_events__常见事件](javascript/common_events/common_events.html)
 
 ------------
 
