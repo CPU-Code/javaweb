@@ -1,0 +1,59 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-10-20 21:21:34
+ * @LastEditTime: 2020-10-20 21:30:22
+ * @FilePath: \web\javascript\DOM_control_style\DOM_control_style.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+        <title>控制样式</title>
+
+        <style>
+            .d1{
+                border: 1px solid yellow;
+                width: 100px;
+                height: 100px;
+            }
+
+            .d2{
+                border: 1px solid blue;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="div1">
+            div1
+        </div>
+
+        <div id="div2">
+            div2
+        </div>
+
+        <script>
+            var div1 = document.getElementById("div1");
+
+            div1.onclick = function() {
+                //修改样式方式1
+                div1.style.border = "1px solid red";
+                div1.style.width = "200px";
+                //font-size--> fontSize
+                div1.style.fontSize = "20px";
+            }
+
+            var div2 = document.getElementById("div2");
+            div2.onclick = function(){
+                div2.className = "d1";
+            }
+        </script>
+    </body>
+</html>
