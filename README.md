@@ -2,7 +2,7 @@
 
 javaweb
 
-HTML 语言 , Javascript , AJAX , CGI 编程
+HTML , css , JavaScript , BootStrap , AJAX , CGI 编程
 
 ----------------
 
@@ -92,12 +92,12 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 - [ ] [select_forms__表格选择](javascript/select_forms/select_forms.html)
 - [x] [table_verification__表单验证](javascript/table_verification/table_verification.html)
 
-----------------------
+-------------
 
 ## [bootstrap](bootstrap)
 
 - [x] [hello_cpu__第一程序](bootstrap/hello_cpu/hello_cpu.html)
-
+- [x] [grid_system__栅格系统](bootstrap/grid_system/grid_system.html)
 
 ----------------
 
