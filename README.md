@@ -96,7 +96,7 @@ HTML 语言 , Javascript , AJAX , CGI 编程
 
 ## [bootstrap](bootstrap)
 
-
+- [x] [hello_cpu__第一程序](bootstrap/hello_cpu/hello_cpu.html)
 
 
 ----------------
