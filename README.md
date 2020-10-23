@@ -99,6 +99,7 @@ HTML , css , JavaScript , BootStrap , AJAX , CGI 编程
 - [x] [hello_cpu__第一程序](bootstrap/hello_cpu/hello_cpu.html)
 - [x] [grid_system__栅格系统](bootstrap/grid_system/grid_system.html)
 - [x] [global_style__全局样式](bootstrap/global_style/global_style.html)
+- [x] [global_style2__全局样式](bootstrap/global_style2/global_style2.html)
 
 ----------------
 
