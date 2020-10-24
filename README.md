@@ -100,6 +100,10 @@ HTML , css , JavaScript , BootStrap , AJAX , CGI 编程
 - [x] [grid_system__栅格系统](bootstrap/grid_system/grid_system.html)
 - [x] [global_style__全局样式](bootstrap/global_style/global_style.html)
 - [x] [global_style2__全局样式](bootstrap/global_style2/global_style2.html)
+- [x] [navigation_bar__组件_导航条](bootstrap/navigation_bar/navigation_bar.html)
+- [x] [pagination_bar__组件_分页条](bootstrap/pagination_bar/pagination_bar.html)
+- [x] [rotation_chart__插件_轮播图](bootstrap/rotation_chart/rotation_chart.html)
+- [ ] [__插件_轮播图](bootstrap//.html)
 
 ----------------
 
