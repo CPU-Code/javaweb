@@ -1,3 +1,15 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2020-08-11 11:41:14
+ * @LastEditTime: 2020-10-24 14:15:22
+ * @FilePath: \web\README.md
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+
 # javaweb
 
 javaweb
@@ -102,7 +114,7 @@ HTML , css , JavaScript , BootStrap , AJAX , CGI 编程
 - [x] [global_style2__全局样式](bootstrap/global_style2/global_style2.html)
 - [x] [navigation_bar__组件_导航条](bootstrap/navigation_bar/navigation_bar.html)
 - [x] [pagination_bar__组件_分页条](bootstrap/pagination_bar/pagination_bar.html)
-- [x] [rotation_chart__插件_轮播图](bootstrap/rotation_chart/rotation_chart.html)
+- [ ] [rotation_chart__插件_轮播图](bootstrap/rotation_chart/rotation_chart.html)
 - [ ] [__插件_轮播图](bootstrap//.html)
 
 ----------------
