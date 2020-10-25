@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<students>
+    <student number="s001">
+        <name id="its">
+            <cpu>cpu</cpu>
+            <code>code</code>
+        </name>
+
+        <age>22</age>
+        <sex>男</sex>
+    </student>
+
+    <student number="s002">
+        <name >cpu</name>
+        <age>25</age>
+        <sex>女</sex>
+    </student>
+</students>
