@@ -1,0 +1,7 @@
+<!--DTD:一种简单的约束技术-->
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, age, sex)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ATTLIST student number ID #REQUIRED>

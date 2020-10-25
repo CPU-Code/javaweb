@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--引入dtd文档到xml文档中
+外部dtd：将约束的规则定义在外部的dtd文件中
+    本地：<!DOCTYPE 根标签名 SYSTEM "dtd文件的位置">
+    <!DOCTYPE 根标签名 PUBLIC "dtd文件名字" "dtd文件的位置URL">
+-->
+<!DOCTYPE students SYSTEM "students.dtd">
+
+<!--内部dtd：将约束规则定义在xml文档中-->
+<!--<!DOCTYPE students [
+
+		<!ELEMENT students (student+) >
+		<!ELEMENT student (name,age,sex)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT age (#PCDATA)>
+		<!ELEMENT sex (#PCDATA)>
+		<!ATTLIST student number ID #REQUIRED>
+		]>-->
+
+<students>
+    <student number="s1">
+        <name>cpu_code</name>
+        <age>22</age>
+        <sex>男</sex>
+    </student>
+
+    <student number="s2">
+        <name>cpu</name>
+        <age>25</age>
+        <sex>女</sex>
+    </student>
+</students>
