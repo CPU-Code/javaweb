@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone='no'?>
-
+<?xml-stylesheet type="text/css" href="css_xml.css" ?>
+<!--
+格式：<?xml 属性列表 ?>
+属性列表：
+    version：版本号，必须的属性
+    encoding：编码方式。告知解析引擎当前文档使用的字符集，默认值：ISO-8859-1
+    standalone：是否独立
+        yes：不依赖其他文件
+        no：依赖其他文件
+-->
 <users>
     <user id="1">
         <name>cpu_code</name>
@@ -15,7 +24,10 @@
         <dender>女</dender>
 
         <code>
-            <!-- if(a &lt; b &amp;&amp; a &gt; c){}-->
+            <!-- CDATA区：在该区域中的数据会被原样展示-->
+            if(a &lt; b &amp;&amp; a &gt; c){
+            }
+
             <![CDATA[
                 if(a < b && a > c){
                 }
