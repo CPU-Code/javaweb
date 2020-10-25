@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<!--xml第一行必须定义为文档声明-->
+<!--标签都是自定义的
+xml的语法严格
+xml是存储数据
+xml文档中有且仅有一个根标签
+标签必须正确关闭
+xml标签名称区分大小写
+-->
 <students>
+    <!--属性值必须使用引号(单双都可)引起来-->
     <student number="s001">
         <name id="its">
             <cpu>cpu</cpu>
