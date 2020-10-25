@@ -119,6 +119,14 @@ HTML , css , JavaScript , BootStrap , AJAX , CGI 编程
 
 ----------------
 
+## [xml](xml)
+
+- [x] [first_xml__第一个xml](xml/first_xml/first_xml.xml)
+- [x] [css_xml__css配合xml](xml/css_xml/css_xml.xml)
+- [ ] [dtd__简单的约束技术](xml/dtd/dtd.xml)
+
+------
+
 - [ ] [project1__项目1](project1)
 - [ ] [ajax_demo](ajax_demo)
 - [ ] [cgi](cgi)
