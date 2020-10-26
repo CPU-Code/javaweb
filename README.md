@@ -126,6 +126,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [dtd__简单的约束技术](xml/dtd/dtd.xml)
 - [x] [schema__复杂的约束技术](xml/schema/schema.xml)
 - [x] [first_jsoup__第一个java解析器](xml/jsoup/src/first_jsoup.java)
+- [x] [jsoup_object__Jsoup对象](xml/jsoup/src/jsoup_object.java)
 
 ------
 
