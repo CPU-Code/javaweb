@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	1.填写xml文档的根元素
+	2.引入xsi前缀.  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	3.引入xsd文件命名空间.  xsi:schemaLocation="http://www.w3.org/2001/XMLSchema/xml  schema.xsd"
+	4.为每一个xsd约束声明一个前缀,作为标识  xmlns="http://www.w3.org/2001/XMLSchema/xml"
+ -->
+<students xmlns="http://www.w3.org/2001/XMLSchema/xml"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.w3.org/2001/XMLSchema/xml schema.xsd"
+          >
+    <student number="cpu_01">
+        <name>cpu_code</name>
+        <age>33</age>
+        <sex>男</sex>
+    </student>
+
+    <student number="cpu_02">
+        <name>code</name>
+        <age>27</age>
+        <sex>女</sex>
+    </student>
+</students>
