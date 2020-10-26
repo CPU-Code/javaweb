@@ -5,88 +5,69 @@ import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.IOException;
+/*
+Element：元素对象
+    1. 获取子元素对象
+        * getElementById​(String id)：根据id属性值获取唯一的element对象
+        * getElementsByTag​(String tagName)：根据标签名称获取元素对象集合
+        * getElementsByAttribute​(String key)：根据属性名称获取元素对象集合
+        * getElementsByAttributeValue​(String key, String value)：根据对应的属性名和属性值获取元素对象集合
 
+    2. 获取属性值
+        * String attr(String key)：根据属性名称获取属性值
+    3. 获取文本内容
+        * String text():获取所有字标签的纯文本内容
+        * String html():获取标签体的所有内容(包括子标签的标签和文本内容)
+ */
 /**
- * Document/Element对象功能
+ *Element对象功能
  */
 public class Element_object {
     public static void main(String[] args) throws IOException {
         //1.获取student.xml的path
         String path = Element_object.class.getClassLoader().getResource("student.xml").getPath();
-        //2.获取Document对象
-        Document document= Jsoup.parse(new File(path), "UTF-8");
-        //3.获取元素对象了。
-        //3.1获取所有student对象
-        Elements elements = document.getElementsByTag("student");
-        System.out.println(elements);
-        System.out.println("----------------------");
+        //获取Document对象
+        Document document = Jsoup.parse(new File(path), "UTF-8");
 
-        //3.2 获取属性名为id的元素对象们
-        Elements elements1 = document.getElementsByAttribute("id");
-        System.out.println(elements1);
-        System.out.println("------------------------");
+        //通过Document对象获取name标签，获取所有的name标签，可以获取到两个
+        // getElementsByTag​(String tagName)：根据标签名称获取元素对象集合
+        Elements elements = document.getElementsByTag("name");
+        System.out.println(elements.size());
+        System.out.println("------------");
 
-        //3.2获取 number属性值为02的元素对象
-        Elements elements2 = document.getElementsByAttributeValue("number", "02");
-        System.out.println(elements2);
-        System.out.println("------------------------");
+        //通过Element对象获取子标签对象
+        Element element_student = document.getElementsByTag("student").get(0);
+        Elements ele_name = element_student.getElementsByTag("name");
+        System.out.println(ele_name.size());
+        System.out.println("------------");
 
-        Element element = document.getElementById("cpu");
-        System.out.println(element);
+        //获取student对象的属性值
+        //  String attr(String key)：根据属性名称获取属性值
+        String number = element_student.attr("number");
+        System.out.println(number);
+        System.out.println("--------------");
+
+        //String text():获取所有字标签的纯文本内容
+        String text = ele_name.text();
+        //String html():获取标签体的所有内容(包括子标签的标签和文本内容)
+        String html = ele_name.html();
+        System.out.println(text);
+        System.out.println(html);
+
     }
 }
-
-/*
-<student number="01">
- <name id="cpu">
-  <cpu>
-   cpu
-  </cpu>
-  <code>code</code>
- </name>
- <age>
-  20
- </age>
- <sex>
-  男
- </sex>
-</student>
-<student number="02">
- <name>
-  cpu_code
- </name>
- <age>
-  29
- </age>
- <sex>
-  女
- </sex>
-</student>
-----------------------
-<name id="cpu">
- <cpu>
-  cpu
- </cpu>
- <code>code</code>
-</name>
-------------------------
-<student number="02">
- <name>
-  cpu_code
- </name>
- <age>
-  29
- </age>
- <sex>
-  女
- </sex>
-</student>
-------------------------
-<name id="cpu">
- <cpu>
-  cpu
- </cpu>
- <code>code</code>
-</name>
-
-* */
+/**
+ * 2
+ * ------------
+ * 1
+ * ------------
+ * 01
+ * --------------
+ * cpu code
+ * <cpu>
+ *  cpu
+ * </cpu>
+ * <code>code</code>
+ *
+ * Process finished with exit code 0
+ * */
