@@ -141,6 +141,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Generic_Servlet__Generic_Servlet](tomcat/src/cn/web/Servlet/Generic_Servlet/Generic_Servlet.java)
 - [x] [Http_Servlet__Http_Servlet](tomcat/src/cn/web/Servlet/Http_Servlet/Http_Servlet.java)
 - [x] [Servlet_path__Servlet路径配置](tomcat/src/cn/web/Servlet/Servlet_path/Servlet_path.java)
+- [x] [Get_request_line_data__Request对象获取请求行数据](tomcat/src/cn/web/request/Get_request_line_data/Get_request_line_data.java)
 
 -----------------
 
