@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
-@WebServlet("/Servlet_first")
+@WebServlet("/Servlet1")
 public class Servlet_first implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException{
