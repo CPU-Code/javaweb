@@ -1,4 +1,4 @@
-package cn.web.Generic_Servlet;
+package cn.web.Servlet.Generic_Servlet;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;

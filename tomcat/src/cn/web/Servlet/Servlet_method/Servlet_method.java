@@ -1,4 +1,4 @@
-package cn.web.Servlet_method;
+package cn.web.Servlet.Servlet_method;
 
 import javax.servlet.*;
 import java.io.IOException;

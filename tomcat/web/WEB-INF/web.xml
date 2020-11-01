@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>Servlet_first</servlet-name>
-        <servlet-class>cn.web.Servlet_first.Servlet_first</servlet-class>
+        <servlet-class>cn.web.Servlet.Servlet_first.Servlet_first</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -16,7 +16,7 @@
 
     <servlet>
         <servlet-name>Servlet_method</servlet-name>
-        <servlet-class>cn.web.Servlet_method.Servlet_method</servlet-class>
+        <servlet-class>cn.web.Servlet.Servlet_method.Servlet_method</servlet-class>
     </servlet>
     
     <servlet-mapping>

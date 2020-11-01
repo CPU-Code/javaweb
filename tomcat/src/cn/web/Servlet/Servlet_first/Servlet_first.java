@@ -1,4 +1,4 @@
-package cn.web.Servlet_first;
+package cn.web.Servlet.Servlet_first;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
