@@ -139,7 +139,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Servlet_first__第一个servlet](tomcat/src/cn/web/Servlet_first/Servlet_first.java)
 - [x] [Servlet_method__servlet的方法](tomcat/src/cn/web/Servlet_method/Servlet_method.java)
 - [x] [Generic_Servlet__Generic_Servlet](tomcat/src/cn/web/Generic_Servlet/Generic_Servlet.java)
-- [x] [Servlet_first__Servlet路径配置](tomcat/src/cn/web/Servlet_first/Servlet_first.java)
+- [x] [Http_Servlet__Http_Servlet](tomcat/src/cn/web/Http_Servlet/Http_Servlet.java)
+- [ ] [__Servlet路径配置](tomcat/src/cn/web//.java)
 
 -----------------
 
