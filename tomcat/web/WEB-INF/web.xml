@@ -13,4 +13,15 @@
         <servlet-name>Servlet_first</servlet-name>
         <url-pattern>/Servlet_first</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet_method</servlet-name>
+        <servlet-class>cn.web.Servlet_method.Servlet_method</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Servlet_method</servlet-name>
+        <url-pattern>/Servlet_method</url-pattern>
+    </servlet-mapping>
+
 </web-app>
