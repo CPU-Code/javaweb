@@ -146,6 +146,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Browser_version__user-agent浏览器版本](tomcat/src/cn/web/request/Browser_version/Browser_version.java)
 - [x] [Referer__referer获取请求头数据](tomcat/src/cn/web/request/Referer/Referer.java)
 - [x] [Request_Post__post获取请求数据](tomcat/src/cn/web/request/Request_Post/Request_Post.java)
+- [x] [Post_Get_Data__post_get获取请求数据](tomcat/src/cn/web/request/Post_Get_Data/Post_Get_Data.java)
 
 -----------------
 
