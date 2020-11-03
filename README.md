@@ -150,6 +150,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Get_Set_Encoding__修改编码](tomcat/src/cn/web/request/Get_Set_Encoding/Get_Set_Encoding.java)
 - [x] [Send_Data__发送数据](tomcat/src/cn/web/request/Send_Accept_Data/Send_Data.java)
 - [x] [Accept_Data__接收数据](tomcat/src/cn/web/request/Send_Accept_Data/Accept_Data.java)
+- [x] [Get_Context__获取Context](tomcat/src/cn/web/request/Get_Context/Get_Context.java)
 
 -----------------
 
