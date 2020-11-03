@@ -147,6 +147,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Referer__referer获取请求头数据](tomcat/src/cn/web/request/Referer/Referer.java)
 - [x] [Request_Post__post获取请求数据](tomcat/src/cn/web/request/Request_Post/Request_Post.java)
 - [x] [Post_Get_Data__post_get获取请求数据](tomcat/src/cn/web/request/Post_Get_Data/Post_Get_Data.java)
+- [x] [Send_Data__发送数据](tomcat/src/cn/web/request/Send_Accept_Data/Send_Data.java)
+- [x] [Accept_Data__接收数据](tomcat/src/cn/web/request/Send_Accept_Data/Accept_Data.java)
 
 -----------------
 
