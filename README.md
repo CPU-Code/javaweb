@@ -158,6 +158,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Char_stream__字符流](tomcat/src/cn/web/response/servlet/Char_stream.java)
 - [x] [Byte_stream__字节流](tomcat/src/cn/web/response/servlet/Byte_stream.java)
 - [x] [CheckCode_Servlet__验证码](tomcat/src/cn/web/response/servlet/CheckCode_Servlet.java)
+- [x] [register__网页验证码](tomcat/web/register.html)
 
 -----------------
 
