@@ -151,6 +151,13 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Send_Data__发送数据](tomcat/src/cn/web/request/Send_Accept_Data/Send_Data.java)
 - [x] [Accept_Data__接收数据](tomcat/src/cn/web/request/Send_Accept_Data/Accept_Data.java)
 - [x] [Get_Context__获取Context](tomcat/src/cn/web/request/Get_Context/Get_Context.java)
+- [ ] [User__登录用户案例](tomcat/src/cn/web/User_login/domain/User.java)
+- [x] [Redirect__重定向](tomcat/src/cn/web/response/servlet/Redirect.java)
+- [x] [Accept_redirect__重定向转发](tomcat/src/cn/web/response/servlet/Accept_redirect.java)
+- [x] [Forward__转发](tomcat/src/cn/web/response/servlet/Forward.java)
+- [x] [Char_stream__字符流](tomcat/src/cn/web/response/servlet/Char_stream.java)
+- [x] [Byte_stream__字节流](tomcat/src/cn/web/response/servlet/Byte_stream.java)
+- [x] [CheckCode_Servlet__验证码](tomcat/src/cn/web/response/servlet/CheckCode_Servlet.java)
 
 -----------------
 
