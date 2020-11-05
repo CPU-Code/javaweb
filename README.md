@@ -163,6 +163,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Get_mime__获取mime类型](tomcat/src/cn/web/servlet_context/Get_mime.java)
 - [x] [Set_Data__设置数据](tomcat/src/cn/web/servlet_context/Set_Data.java)
 - [x] [Get_data__获取数据](tomcat/src/cn/web/servlet_context/Get_data.java)
+- [x] [Get_path__获取路径](tomcat/src/cn/web/servlet_context/Get_path.java)
+- [x] [download__下载文件](tomcat/web/download.html)
 
 -----------------
 
