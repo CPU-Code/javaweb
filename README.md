@@ -161,6 +161,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [register__网页验证码](tomcat/web/register.html)
 - [x] [Get_context__获取context对象](tomcat/src/cn/web/servlet_context/Get_context.java)
 - [x] [Get_mime__获取mime类型](tomcat/src/cn/web/servlet_context/Get_mime.java)
+- [x] [Set_Data__设置数据](tomcat/src/cn/web/servlet_context/Set_Data.java)
+- [x] [Get_data__获取数据](tomcat/src/cn/web/servlet_context/Get_data.java)
 
 -----------------
 
