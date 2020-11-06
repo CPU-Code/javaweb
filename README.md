@@ -165,6 +165,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Get_data__获取数据](tomcat/src/cn/web/servlet_context/Get_data.java)
 - [x] [Get_path__获取路径](tomcat/src/cn/web/servlet_context/Get_path.java)
 - [x] [download__下载文件](tomcat/web/download.html)
+- [x] [Cookie_send__发送cookie](tomcat/src/cn/web/cookie/Cookie_send.java)
+- [x] [Cookie_accept__接收cookie](tomcat/src/cn/web/cookie/Cookie_accept.java)
 
 -----------------
 
