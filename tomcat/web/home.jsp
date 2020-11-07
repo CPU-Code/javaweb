@@ -1,8 +1,6 @@
-<%@ page import="javax.xml.crypto.Data" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.net.URLEncoder" %>
-<%@ page import="javax.swing.text.Style" %>
 <%@ page import="java.net.URLDecoder" %>
 
 <%--
