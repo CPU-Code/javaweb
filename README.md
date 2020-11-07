@@ -170,6 +170,9 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Two_Cookie_send__发送俩个cookie](tomcat/src/cn/web/cookie/Two_Cookie_send.java)
 - [x] [Cookie_live__cookie存活时间](tomcat/src/cn/web/cookie/Cookie_live.java)
 - [x] [Cookie_chinese__cookie存储中文](tomcat/src/cn/web/cookie/Cookie_chinese.java)
+- [x] [Cookie_test__cookie访问响应时间](tomcat/src/cn/web/cookie/Cookie_test.java)
+- [x] [index__jsp定义java](tomcat/web/index.jsp)
+- [x] [home__cookie访问响应时间](tomcat/web/home.jsp)
 
 -----------------
 
