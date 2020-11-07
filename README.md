@@ -167,6 +167,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [download__下载文件](tomcat/web/download.html)
 - [x] [Cookie_send__发送cookie](tomcat/src/cn/web/cookie/Cookie_send.java)
 - [x] [Cookie_accept__接收cookie](tomcat/src/cn/web/cookie/Cookie_accept.java)
+- [x] [Two_Cookie_send__发送俩个cookie](tomcat/src/cn/web/cookie/Two_Cookie_send.java)
+- [x] [Cookie_live__cookie存活时间](tomcat/src/cn/web/cookie/Cookie_live.java)
 
 -----------------
 
