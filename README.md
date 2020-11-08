@@ -173,6 +173,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Cookie_test__cookie访问响应时间](tomcat/src/cn/web/cookie/Cookie_test.java)
 - [x] [index__jsp定义java](tomcat/web/index.jsp)
 - [x] [home__cookie访问响应时间](tomcat/web/home.jsp)
+- [x] [Session_shared__session共享数据](tomcat/src/cn/web/session/Session_shared.java)
+- [x] [Session_get__session获取数据](tomcat/src/cn/web/session/Session_get.java)
 
 -----------------
 
