@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+        // 给bt按钮添加单击事件
+        window.onload = function () {
+            //1.获取bt按钮
+            $("#bt").click(function () {
+                alert("window.onload 中的bt被点");
+            });
+        }
+
+        //jquery入口函数(dom文档加载完成之后执行该函数中的代码)
+        $(function () {
+            //1.获取bt按钮
+            $("#bt").click(function () {
+                alert("$(function () 的bt被点")
+            });
+        });
+
+        /*
+         window.onload  和 $(function) 区别
+             * window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉
+             * $(function)可以定义多次的。
+          */
+
+        function fun1(){
+            alert("function fun1");
+        }
+        
+        function fun2() {
+            alert("function fun2");
+        }
+
+        window.onload = fun1;
+        window.onload = fun2;
+
+        $(function(){
+             alert("$(function()1");
+         });
+
+         $(function(){
+             alert("$(function()2");
+        });
+
+        $(function () {
+            $("#div1").css("backgroundColor", "pink");
+            $("#div2").css("background-color", "red");
+        });
+
+    </script>
+</head>
+<body>
+    <div id="div1">div1 ... </div>
+    <div id="div2">div2 ... </div>
+
+    <input type="button" value="点我呀" id="bt">
+</body>
+</html>
