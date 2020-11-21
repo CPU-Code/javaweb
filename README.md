@@ -2,7 +2,7 @@
  * @由于个人水平有限, 难免有些错误, 还请指点:  
  * @Author: cpu_code
  * @Date: 2020-08-11 11:41:14
- * @LastEditTime: 2020-10-24 16:03:29
+ * @LastEditTime: 2020-11-11 22:51:26
  * @FilePath: \web\README.md
  * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
  * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
@@ -15,6 +15,18 @@
 javaweb
 
 HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
+
+---------------
+
+## 文件目录
+
+- [ ] [html](#html)
+- [ ] [css](#css)
+- [ ] [javascript](#javascript)
+- [ ] [bootstrap](#bootstrap)
+- [ ] [xml](#xml)
+- [ ] [tomcat](#tomcat)
+- [ ] [JQuery](#JQuery)
 
 ----------------
 
@@ -36,6 +48,9 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [form__表单](html/form/form.html)
 - [x] [case2__案例网站首页](html/case2/case2.html)
 
+- [返回目录](#文件目录)
+
+
 ---------------
 
 ## [css](css)
@@ -51,6 +66,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [css_property__css属性](css/css_property/css_property.html)
 - [x] [css_property_box__css属性_盒子模型](css/css_property_box/css_property_box.html)
 - [x] [registration_page_css__注册页面](css/registration_page_css/registration_page_css.html)
+
+- [返回目录](#文件目录)
 
 ---------------
 
@@ -104,6 +121,9 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [ ] [select_forms__表格选择](javascript/select_forms/select_forms.html)
 - [x] [table_verification__表单验证](javascript/table_verification/table_verification.html)
 
+- [返回目录](#文件目录)
+
+
 -------------
 
 ## [bootstrap](bootstrap)
@@ -116,6 +136,9 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [pagination_bar__组件_分页条](bootstrap/pagination_bar/pagination_bar.html)
 - [x] [rotation_chart__插件_轮播图](bootstrap/rotation_chart/rotation_chart.html)
 - [ ] [website_homepage__网站首页](bootstrap/website_homepage/website_homepage.html)
+
+- [返回目录](#文件目录)
+
 
 ----------------
 
@@ -131,6 +154,9 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Element_object__Element对象](xml/jsoup/src/Element_object.java)
 - [x] [selector__选择器](xml/jsoup/src/selector.java)
 - [x] [xpath__xpath查询](xml/jsoup/src/xpath.java)
+
+- [返回目录](#文件目录)
+
 
 ----------------
 
@@ -176,6 +202,20 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Session_shared__session共享数据](tomcat/src/cn/web/session/Session_shared.java)
 - [x] [Session_get__session获取数据](tomcat/src/cn/web/session/Session_get.java)
 - [x] [Jsessionid__session的id](tomcat/src/cn/web/session/Jsessionid.java)
+- [x] [login__验证码校验](tomcat/web/login_servlet_html/login.jsp)
+
+- [返回目录](#文件目录)
+
+----------------
+
+## [JQuery](JQuery)
+
+- [x] [customize__自定义jq框架](JQuery/src/customize.html)
+- [x] [JQuery_first__第一个jquery](JQuery/src/JQuery_first.html)
+- [x] [jq_js_Conversion__JS与JQ的互换](JQuery/src/jq_js_Conversion.html)
+- [x] [event__事件绑定](JQuery/src/event.html)
+
+- [返回目录](#文件目录)
 
 -----------------
 
