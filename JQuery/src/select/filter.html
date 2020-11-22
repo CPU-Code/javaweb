@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>过滤选择器</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <style type="text/css">
+        div, span{
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            background: #44aa00;
+            border: black 1px solid;
+            float: left;
+            font-size: 15px;
+            font-family: Roman;
+        }
+
+        div .mini{
+            width: 100px;
+            height: 40px;
+            background: gray;
+            border: black 2px solid;
+            font-family: Roman;
+        }
+
+        div .mini01{
+            width: 100px;
+            height: 30px;
+            background: magenta;
+            font-size: 10px;
+            font-family: Roman;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            //改变第一个 div 元素的背景色为 粉色
+            $("#b1").click(function () {
+                $("div:first").css("backgroundColor", "pink");
+            });
+
+            //改变最后一个 div 元素的背景色为 绿色
+            $("#b2").click(function () {
+                $("div:last").css("backgroundColor", "green");
+            });
+
+            //改变class不为 one 的所有 div 元素的背景色为 红色
+            $("#b3").click(function () {
+                $("div:not(.one)").css("backgroundColor", "red");
+            });
+
+            //改变索引值为偶数的 div 元素的背景色为 蓝色
+            $("#b4").click(function () {
+                $("div:even").css("backgroundColor","blue");
+            });
+            //改变索引值为奇数的 div 元素的背景色为 橙色
+            $("#b5").click(function () {
+                $("div:odd").css("backgroundColor", "orange");
+            });
+            //改变索引值为大于 3 的 div 元素的背景色为 紫色
+            $("#b6").click(function () {
+                $("div:gt(3)").css("backgroundColor", "purple");
+            });
+            //改变索引值为等于 3 的 div 元素的背景色为 白色
+            $("#b7").click(function () {
+                $("div:eq(3)").css("backgroundColor", "white");
+            });
+            //改变索引值为小于 3 的 div 元素的背景色为 黑色
+            $("#b8").click(function () {
+                $("div:lt(3)").css("backgroundColor", "black");
+            });
+            //改变所有的标题元素的背景色为 红色
+            $("#b9").click(function () {
+                $(":header").css("backgroundColor", "red");
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="保存" class="mini" name="ok" >
+    <input type="button" value="改变第一个 div 元素的背景色为 粉色" id="b1">
+    <input type="button" value="改变最后一个 div 元素的背景色为 绿色" id="b2">
+    <input type="button" value="改变class不为 one 的所有 div 元素的背景色为 红色" id="b3">
+    <input type="button" value="改变索引值为偶数的 div 元素的背景色为 蓝色" id="b4">
+    <input type="button" value="改变索引值为奇数的 div 元素的背景色为 橙色" id="b5">
+    <input type="button" value="改变索引值为大于 3 的 div 元素的背景色为 紫色" id="b6">
+    <input type="button" value="改变索引值为等于 3 的 div 元素的背景色为 白色" id="b7">
+    <input type="button" value="改变索引值为小于 3 的 div 元素的背景色为 黑色" id="b8">
+    <input type="button" value="改变所有的标题元素的背景色为 红色" id="b9">
+
+    <h1>过滤选择器</h1>
+    <h2>cpu_code</h2>
+
+    <div id="one"> id = "one"</div>
+
+    <div id="two" class="mini">
+        id="two" class="mini"
+        <div class="mini">class="mini"</div>
+    </div>
+
+    <div class="one">
+        class="one"
+        <div class="mini">class="mini"</div>
+        <div class="mini01">class="mini01"</div>
+    </div>
+
+    <div class="two">
+        class="two"
+        <div class="mini">class="mini"</div>
+        <div class="mini01">class="mini01"</div>
+    </div>
+</body>
+</html>

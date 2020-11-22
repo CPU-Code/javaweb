@@ -217,6 +217,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Basis__基本选择器](JQuery/src/select/Basis.html)
 - [x] [level__层级选择器](JQuery/src/select/level.html)
 - [x] [property__属性选择器](JQuery/src/select/property.html)
+- [x] [filter__过滤选择器](JQuery/src/select/filter.html)
 
 - [返回目录](#文件目录)
 
