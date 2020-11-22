@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>层级选择器</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <style type="text/css">
+        div, span{
+            width: 150px;
+            heigth: 100px;
+            margin: 20px;
+            background: #aa1111;
+            border: black 1px solid;
+            font-size: 15px;
+            float: left;
+            font-family: Roman;
+
+        }
+
+        div .mini{
+            width: 100px;
+            heigth: 30px;
+            background: #99aaaa;
+            border: black 2px solid;
+            font-size: 13px;
+            font-family: Roman;
+        }
+
+        div .mini01{
+            width: auto;
+            height: 40px;
+            background: #dd3af4;
+            border: black 3px solid;
+            font-size: 10px;
+            font-family: Roman;
+        }
+    </style>
+
+    <!--
+    1. 后代选择器
+        * 语法： $("A B ") 选择A元素内部的所有B元素
+    2. 子选择器
+        * 语法： $("A > B") 选择A元素内部的所有B子元素
+	-->
+
+    <script type="text/javascript">
+        $(function () {
+            //改变 <body> 内所有 <div> 的背景色为红色
+            $("#b1").click(function () {
+                $("body div").css("backgroundColor","pink");
+            });
+
+            //改变 <body> 内子 <div> 的背景色为 红色
+            $("#b2").click(function () {
+                $("body > div").css("backgroundColor", "blue");
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="保存 class=mini " class="mini" name="ok">
+    <input type="button" value="改变 <body> 内所有 <div> 的背景色为红色" id="b1">
+    <input type="button" value="改变 <body> 内子 <div> 的背景色为 红色" id="b2">
+
+    <h1>层级选择器</h1>
+    <h2>cpu_code</h2>
+
+    <div id="one">id="one"</div>
+
+    <div id="two" class="mini">
+        id="two" class="mini"
+        <div class="mini">class="mini"</div>
+    </div>
+
+    <div class="one">
+        class="one"
+        <div class="mini01">class="mini01"</div>
+        <div class="mini">class="mini"</div>
+    </div>
+
+    <span class="spanone">class= spanone  span </span>
+</body>
+</html>
