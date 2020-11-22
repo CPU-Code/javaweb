@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>属性选择器</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <style type="text/css">
+        div, span{
+            width: 150px;
+            height: 100px;
+            margin: 20px;
+            background: #99aa11;
+            border: #000000 1px solid;
+            float: left;
+            font-size: 15px;
+            font-family: Roman;
+        }
+
+        div .mini{
+            width: 100px;
+            height: 50px;
+            background: #11aa99;
+            border: #000000 2px solid;
+            font-size: 13px;
+            font-family: Roman;
+        }
+
+        div .mini01{
+            width: 150px;
+            height: 40px;
+            background: #6611dd;
+            border: black 3px solid;
+            font-size: 10px;
+            font-family: Roman;
+        }
+
+        div .visible{
+            display:none;
+        }
+    </style>
+
+    <!--
+    1. 属性名称选择器
+        * 语法： $("A[属性名]") 包含指定属性的选择器
+    2. 属性选择器
+        * 语法： $("A[属性名='值']") 包含指定属性等于指定值的选择器
+    3. 复合属性选择器
+        * 语法： $("A[属性名='值'][]...") 包含多个属性条件的选择器
+	-->
+
+    <script type="text/javascript">
+        $(function () {
+            //含有属性title 的div元素背景色为粉色
+            $("#b1").click(function () {
+                $("div[title]").css("backgroundColor","pink");
+            });
+
+            //属性title值等于test的div元素背景色为蓝色
+            $("#b2").click(function () {
+                $("div[title='test']").css("backgroundColor","blue");
+            });
+
+            //属性title值不等于test的div元素(没有属性title的也将被选中)背景色为黄色
+            $("#b3").click(function () {
+                $("div[title!='test']").css("backgroundColor","yellow");
+            });
+
+            //属性title值 以te开始 的div元素背景色为绿色
+            $("#b4").click(function () {
+                $("div[title^='te']").css("backgroundColor", "green");
+            });
+
+            //属性title值 以est结束 的div元素背景色为橙色
+            $("#b5").click(function () {
+                $("div[title$=est]").css("backgroundColor", "orange");
+            });
+            //属性title值 含有es的div元素背景色为紫色
+            $("#b6").click(function () {
+                $("div[title*=es]").css("backgroundColor", "purple");
+            });
+
+            //选取有属性id的div元素，然后在结果中选取属性title值含有“es”的 div 元素背景色为白色
+            $("#b7").click(function () {
+                $("div[id][title*=es]").css("backgroundColor","white");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="保存 class = mini " class="mini" name="ok">
+    <input type="button" value="含有属性title 的div元素背景色为粉色" id="b1">
+    <input type="button" value="属性title值等于test的div元素背景色为蓝色" id="b2">
+    <input type="button" value="属性title值不等于test的div元素(没有属性title的也将被选中)背景色为黄色" id="b3">
+    <input type="button" value="属性title值 以te开始 的div元素背景色为绿色" id="b4">
+    <input type="button" value="属性title值 以est结束 的div元素背景色为橙色" id="b5">
+    <input type="button" value="属性title值 含有es的div元素背景色为紫色" id="b6">
+    <input type="button" value="选取有属性id的div元素，然后在结果中选取属性title值含有“es”的 div 元素背景色为白色" id="b7">
+
+    <h1>层级选择器</h1>
+    <h2>cpu_code</h2>
+
+    <div id="one">id = one </div>
+
+    <div id="two" class="mini" title="test">
+        id = two class = mini div title= test
+        <div class="mini"> class = mini </div>
+    </div>
+
+    <div class="visible">
+        class="visible"
+        <div class="mini">class="mini"</div>
+        <div class="mini01">class="mini01"</div>
+    </div>
+
+    <div class="one" title="test02">
+        div class="one" title="test02"
+        <div class="mini">class="mini"</div>
+        <div class="mini" style="margin-top:0px;">class="mini"</div>
+    </div>
+
+    <div class="visible">class="visible"</div>
+
+    <div class="two">class="two"</div>
+
+    <div id="mover">id="mover"</div>
+
+    <input type="text" value="type = text cpu_code" id="username" name="username">
+</body>
+</html>
