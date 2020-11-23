@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单属性过滤选择器</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <style type="text/css">
+        div,span{
+            width: 150px;
+            height: 100px;
+            margin: 20px;
+            background: #dddd14;
+            border: black 1px solid;
+            float: left;
+            font-size: 15px;
+            font-family: Roman;
+        }
+
+        div .mini{
+            width: 100px;
+            height: 40px;
+            background: #dd4920;
+            border: black 2px solid;
+            font-size: 13px;
+            font-family: Roman;
+        }
+
+        div .mini01{
+            width: 100px;
+            height: 30px;
+            background: #da9310;
+            border-bottom: black 3px solid;
+            font-size: 10px;
+            font-family: Roman;
+        }
+
+        #job{
+            margin: 30px;
+        }
+
+        #education{
+            margin-top: 70px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            //利用 jQuery 对象的 val() 方法改变表单内可用 <input> 元素的值
+            $("#b1").click(function () {
+                $("input[type='text']:enabled").val("可用元素的值");
+            });
+
+            //利用 jQuery 对象的 val() 方法改变表单内不可用 <input> 元素的值
+            $("#b2").click(function () {
+                $("input[type='text']:disabled").val("不可用元素的值");
+            });
+
+            //利用 jQuery 对象的 length 属性获取复选框选中的个数
+            $("#b3").click(function () {
+                alert($("input[type='checkbox']:checked").length);
+            });
+
+            //利用 jQuery 对象的 length 属性获取下拉框选中的个数
+            $("#b4").click(function () {
+                alert($("#job > option:selected").length);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="保存" class="mini" name="ok">
+    <input type="button" value="利用 jQuery 对象的 val() 方法改变表单内可用 <input> 元素的值" id="b1">
+    <input type="button" value="利用 jQuery 对象的 val() 方法改变表单内不可用 <input> 元素的值" id="b2">
+    <input type="button" value="利用 jQuery 对象的 length 属性获取复选框选中的个数" id="b3">
+    <input type="button" value="利用 jQuery 对象的 length 属性获取下拉框选中的个数" id="b4">
+
+    <br><br>
+
+    <input type="text" value="不可用值1" disabled="disabled">
+    <input type="text" value="可用值1">
+    <input type="text" value="不可用值2" disabled="disabled">
+    <input type="text" value="可用值2">
+
+    <br><br>
+
+    <input type="checkbox" name="cpu_code" value="美容"> 美容
+    <input type="checkbox" name="cpu_code" value="IT">IT
+    <input type="checkbox" name="cpu_code" value="金融">金融
+    <input type="checkbox" name="cpu_code" value="管理">管理
+
+    <br><br>
+
+    <input type="radio" name="sex" value="男">男
+    <input type="radio" name="sex" value="女">女
+
+    <br><br>
+
+    <select name="job" id="job" multiple="multiple" size="4">
+        <option>程序员</option>
+        <option>中级程序员</option>
+        <option>高级程序员</option>
+        <option>系统分析师</option>
+    </select>
+
+    <select name="education" id="education">
+        <option>大专</option>
+        <option>本科</option>
+        <option>硕士</option>
+        <option>博士</option>
+    </select>
+
+    <br>
+
+    <div id="two" class="mini">
+        id="two" class="mini"
+        <div class="mini">class="mini"</div>
+    </div>
+
+    <div class="one">
+        class="one"
+        <div class="mini">class="mini"</div>
+        <div class="mini01">class="mini01"</div>
+    </div>
+
+    <div class="two">
+        class="two"
+        <div class="mini">class="mini</div>
+        <div class="mini01">class="mini01"</div>
+    </div>
+</body>
+</html>
