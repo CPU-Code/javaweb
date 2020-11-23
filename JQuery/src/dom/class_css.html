@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>样式操作</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <style type="text/css">
+        div{
+            width: 150px;
+            height: 100px;
+            margin: 20px;
+            background: #22aa99;
+            border: #000000 1px solid;
+            float:left;
+            font-size: 15px;
+            font-family:Roman;
+        }
+
+        .second{
+            width: 200px;
+            height: 150px;
+            margin: 30px;
+            background: #dd19da;
+            border: #000000 2px solid;
+            float: left;
+            font-size: 20px;
+            font-family: Roman;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            // 采用属性增加样式(改变id=one的样式)
+           $("#b1").click(function () {
+               $("#one").prop("class", "second");
+           });
+
+            //value=" addClass"
+            $("#b2").click(function () {
+                $("#one").addClass("second");
+            });
+
+            // removeClass
+            $("#b3").click(function () {
+                $("#one").removeClass("second");
+            });
+
+            // 切换样式
+            $("#b4").click(function () {
+                $("#one").toggleClass("second");
+            });
+
+            //通过css()获得id为one背景颜色
+            $("#b5").click(function () {
+                var backgroundColor = $("#one").css("backgroundColor");
+                alert("backgroundColor = " + backgroundColor);
+            });
+
+            // 通过css()设置id为one背景颜色为绿色
+            $("#b6").click(function () {
+                $("#one").css("backgroundColor", "green");
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="保存" class="mini" name="ok">
+    <input type="button" value="采用属性增加样式(改变id=one的样式)" id="b1">
+    <input type="button" value="addClass" id="b2">
+    <input type="button" value="removeClass" id="b3">
+    <input type="button" value="切换样式" id="b4">
+    <input type="button" value="通过css()获得id为one背景颜色" id="b5">
+    <input type="button" value="通过css()设置id为one背景颜色为绿色" id="b6">
+
+    <div id="one">id="one"</div>
+</body>
+</html>
