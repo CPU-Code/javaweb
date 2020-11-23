@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性操作</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!--
+    1. 通用属性操作
+        1. attr(): 获取/设置元素的属性
+        2. removeAttr():删除属性
+        3. prop():获取/设置元素的属性
+        4. removeProp():删除属性
+
+    * attr和prop区别？
+        1. 如果操作的是元素的固有属性，则建议使用prop
+        2. 如果操作的是元素自定义的属性，则建议使用attr
+    2. 对class属性操作
+        1. addClass():添加class属性值
+        2. removeClass():删除class属性值
+        3. toggleClass():切换class属性
+            * toggleClass("one"):
+                * 判断如果元素对象上存在class="one"，则将属性值one删除掉。  如果元素对象上不存在class="one"，则添加
+    -->
+
+    <style type="text/css">
+        div, span{
+
+        }
+
+        div .mini{
+
+        }
+
+        div .visible{
+
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            //获取北京节点的name属性值
+            var name = $("#bj").attr("name");
+            alert("name = " + name);
+
+            //设置北京节点的name属性的值为dabeijing
+            $("#bj").attr("name", "dabeijing");
+
+            //新增北京节点的discription属性 属性值是didu
+            $("#bj").attr("discription", "cpu_code");
+
+            //删除北京节点的name属性并检验name属性是否存在
+            $("#bj").removeAttr("name");
+
+            //获得hobby的的选中状态
+            var checked = $("#hobby").prop("checked");
+            alert("prop 获取 checked = " + checked);
+
+            //获取不到，弹出undefined
+            var checked = $("#hobby").attr("checked");
+            alert("attr 获取 checked = " + checked);
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li id="bj" name="beijing" xxx="yyy">北京</li>
+        <li id="tj" name="tianjin">天津</li>
+    </ul>
+
+    <input type="checkbox" id="hobby">
+</body>
+</html>
