@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>内部插入脚本</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <!--
+    1. append():父元素将子元素追加到末尾
+        * 对象1.append(对象2): 将对象2添加到对象1元素内部，并且在末尾
+    2. prepend():父元素将子元素追加到开头
+        * 对象1.prepend(对象2):将对象2添加到对象1元素内部，并且在开头
+    3. appendTo():
+        * 对象1.appendTo(对象2):将对象1添加到对象2内部，并且在末尾
+    4. prependTo()：
+        * 对象1.prependTo(对象2):将对象1添加到对象2内部，并且在开头
+
+    5. after():添加元素到元素后边
+        * 对象1.after(对象2)： 将对象2添加到对象1后边。对象1和对象2是兄弟关系
+    6. before():添加元素到元素前边
+        * 对象1.before(对象2)： 将对象2添加到对象1前边。对象1和对象2是兄弟关系
+    7. insertAfter()
+        * 对象1.insertAfter(对象2)：将对象1添加到对象2后边。对象1和对象2是兄弟关系
+    8. insertBefore()
+        * 对象1.insertBefore(对象2)： 将对象1添加到对象2前边。对象1和对象2是兄弟关系
+    -->
+
+    <script type="text/javascript">
+        $(function () {
+
+            // 将cpu放置到city的后面
+            $("#b1").click(function () {
+                //append
+                //$("#city").append($("#cpu_id"));
+
+                //appendTo
+                $("#cpu_id").appendTo($("#city"));
+
+            });
+
+            //将cpu放置到city的最前面
+            $("#b2").click(function () {
+                //prepend
+                //$("#city").prepend($("#cpu_id"));
+
+                //prependTo
+                $("#cpu_id").prependTo($("#city"));
+            });
+
+            //将cpu插入到天津后面
+            $("#b3").click(function () {
+                //after
+                //$("#tj").after($("#cpu_id"));
+
+                //insertAfter
+                $("#cpu_id").insertAfter($("#tj"));
+
+            });
+            
+            //将cpu插入到天津前面
+            $("#b4").click(function () {
+                //before
+                //$("#tj").before($("#cpu_id"));
+
+                //insertBefore
+                $("#cpu_id").insertBefore($("#tj"));
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <input type="button" value="将cpu放置到city的后面" id="b1">
+    <input type="button" value="将cpu放置到city的最前面" id="b2">
+    <input type="button" value="将cpu插入到天津后面" id="b3">
+    <input type="button" value="将cpu插入到天津前面" id="b4">
+
+    <ul id="city">
+        <li id="bj" name="beijing">北京</li>
+        <li id="tj" name="tianjin">天津</li>
+        <li id="cq" name="chongqing">重庆</li>
+    </ul>
+
+    <br>
+
+    <ul id="love">
+        <li id="cpu_id" name="cpu">cpu</li>
+        <li id="haha_id" name="haha">哈哈</li>
+    </ul>
+
+</body>
+</html>

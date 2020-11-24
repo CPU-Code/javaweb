@@ -222,6 +222,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [html_text_val__内容操作](JQuery/src/dom/html_text_val.html)
 - [x] [property__通用属性操作](JQuery/src/dom/property.html)
 - [x] [class_css__样式操作](JQuery/src/dom/class_css.html)
+- [x] [create_append__内部插入脚本](JQuery/src/dom/create_append.html)
 
 - [返回目录](#文件目录)
 
