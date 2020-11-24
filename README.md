@@ -224,6 +224,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [class_css__样式操作](JQuery/src/dom/class_css.html)
 - [x] [create_append__内部插入脚本](JQuery/src/dom/create_append.html)
 - [x] [remove__删除节点](JQuery/src/dom/remove.html)
+- [x] [Change_color__隔行换色](JQuery/src/case/Change_color.html)
 
 - [返回目录](#文件目录)
 
