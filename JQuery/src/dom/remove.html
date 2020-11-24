@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html charset=UTF-8">
+    <title>删除节点</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <!--
+    remove():移除元素
+        对象.remove():将对象删除掉
+    empty():清空元素的所有后代元素。
+        对象.empty():将对象的后代元素全部清空，但是保留当前对象以及其属性节点
+    -->
+    <script type="text/javascript">
+        $(function () {
+
+            // 删除<li id='bj' name='beijing'>北京</li>
+           $("#b1").click(function () {
+
+               $("#bj").remove();
+               //$("#tj").remove();
+               //$("#cq").remove();
+           });
+
+           // 删除city所有的li节点   清空元素中的所有后代节点(不包含属性节点)
+           $("#b2").click(function () {
+               $("#city").empty();
+           });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="删除<li id='bj' name='beijing'>北京</li>" id="b1">
+    <input type="button" value="删除所有的子节点   清空元素中的所有后代节点(不包含属性节点)" id="b2">
+
+    <ul id="city">
+        <li id="bj" name="beijing">北京</li>
+        <li id="tj" name="tianjin">天津</li>
+        <li id="cq" name="chongqing">重庆</li>
+    </ul>
+
+    <p class="ha_id">啊哈哈</p>
+    how ara
+    <p>you ?</p>
+
+</body>
+</html>
