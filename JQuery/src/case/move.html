@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右移动</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <style>
+        #leftName, #btn, #rightName{
+            float: left;
+            width: 100px;
+            height: 200px;
+        }
+
+        #toLeft, #toRight{
+            margin-top: 50px;
+            margin-left: 30px;
+            width: 50px;
+        }
+
+        .border{
+            height: 300px;
+            padding: 100px;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            //需求：实现下拉列表选中条目左右选择功能
+            $("#toRight").click(function () {
+                //获取右边的下拉列表对象，append(左边下拉列表选中的option)
+                //$("#rightName").append($("#leftName > option:selected"));
+
+                $("#leftName > option:selected").appendTo($("#rightName"));
+            });
+
+            $("#toLeft").click(function () {
+                //appendTo   获取右边选中的option，将其移动到左边下拉列表中
+                $("#rightName > option:selected").appendTo($("#leftName"));
+
+                //$("#leftName").append($("#rightName > option:selected"));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="border">
+        <select id="leftName" multiple="multiple">
+            <option>cpu</option>
+            <option>cpu_code</option>
+            <option>哈哈</option>
+            <option>闪电三鞭</option>
+        </select>
+
+        <div id="btn">
+            <input type="button" id="toRight" value="-->">
+            <input type="button" id="toLeft" value="<--">
+        </div>
+
+        <select id="rightName" multiple="multiple">
+            <option>发财</option>
+        </select>
+    </div>
+</body>
+</html>
