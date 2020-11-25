@@ -226,6 +226,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [remove__删除节点](JQuery/src/dom/remove.html)
 - [x] [Change_color__隔行换色](JQuery/src/case/Change_color.html)
 - [x] [all_select__全选或全不选](JQuery/src/case/all_select.html)
+- [x] [expression__表情选择](JQuery/src/case/expression.html)
 
 - [返回目录](#文件目录)
 
