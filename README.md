@@ -228,6 +228,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [all_select__全选或全不选](JQuery/src/case/all_select.html)
 - [x] [expression__表情选择](JQuery/src/case/expression.html)
 - [x] [move__左右移动](JQuery/src/case/move.html)
+- [x] [Animation__显示隐藏动画](JQuery/src/Animation/Animation.html)
 
 - [返回目录](#文件目录)
 
