@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定事件</title>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="UTF-8"></script>
+
+    <!--
+    3. 事件绑定
+    1. jquery标准的绑定方式
+        * jq对象.事件方法(回调函数)；
+        * 注：如果调用事件方法，不传递回调函数，则会触发浏览器默认行为。
+            * 表单对象.submit();//让表单提交
+    -->
+    <script>
+        $(function () {
+            //1.获取name对象，绑定click事件
+            /*
+            $("#name").click(function () {
+                alert("我被点了...")
+            });
+*/
+
+            //给name绑定鼠标移动到元素之上事件。绑定鼠标移出事件
+            /*
+            $("#name").mouseover(function () {
+                alert("鼠标来了");
+            });
+
+            $("#name").mouseout(function () {
+                alert("鼠标跑了");
+            });
+*/
+
+            //简化操作，链式编程
+
+            $("#name").mouseover(function () {
+                alert("鼠标来了..")
+            }).mouseout(function(){
+                alert("鼠标走了..")
+            });
+
+
+            //让文本输入框获得焦点
+            alert("获取焦点");
+            $("#name").focus();
+
+
+
+            //表单对象.submit();//让表单提交
+        });
+    </script>
+</head>
+<body>
+    <input id="name" type="text" value="绑定点击事件">
+</body>
+</html>

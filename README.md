@@ -204,7 +204,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Jsessionid__session的id](tomcat/src/cn/web/session/Jsessionid.java)
 - [x] [login__验证码校验](tomcat/web/login_servlet_html/login.jsp)
 
-- [返回目录](#文件目录)
+- [返回目录](#文件目录)                                                                                                        
 
 ----------------
 
@@ -230,6 +230,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [move__左右移动](JQuery/src/case/move.html)
 - [x] [Animation__显示隐藏动画](JQuery/src/Animation/Animation.html)
 - [x] [Traverse__遍历](JQuery/src/Traverse/Traverse.html)
+- [x] [bind__绑定事件](JQuery/src/Event/bind.html)
 
 - [返回目录](#文件目录)
 
