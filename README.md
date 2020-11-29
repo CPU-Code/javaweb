@@ -231,6 +231,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Animation__显示隐藏动画](JQuery/src/Animation/Animation.html)
 - [x] [Traverse__遍历](JQuery/src/Traverse/Traverse.html)
 - [x] [bind__绑定事件](JQuery/src/Event/bind.html)
+- [x] [on_bind__on绑定事件](JQuery/src/Event/on_bind.html)
 
 - [返回目录](#文件目录)
 
