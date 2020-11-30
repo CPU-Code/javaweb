@@ -5,10 +5,16 @@
     <title>on绑定事件</title>
     <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="UTF-8"></script>
 
+    <!--
+    2. on绑定事件/off解除绑定
+        * jq对象.on("事件名称",回调函数)
+        * jq对象.off("事件名称")
+            * 如果off方法不传递任何参数，则将组件上的所有事件全部解绑
+    -->
     <script>
         $(function () {
             //1.使用on给按钮绑定单击事件  click
-            $("#bin").on("click", function () {
+            $("#btn").on("click", function () {
                 alert("我被点击了。。。");
             });
 
