@@ -235,7 +235,9 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Switch__事件切换](JQuery/src/Event/Switch.html)
 - [x] [Ad_display__广告自动显示](JQuery/src/case/Ad_display.html)
 - [x] [lottery__抽奖案例](JQuery/src/case/lottery.html)
-
+- [x] [object_expand__jq对象方法扩展](JQuery/src/Plug_in/object_expand.html)
+- [x] [global_expand__jq全局方法扩展](JQuery/src/Plug_in/global_expand.html)
+ 
 - [返回目录](#文件目录)
 
 -----------------
