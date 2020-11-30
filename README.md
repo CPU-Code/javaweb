@@ -234,6 +234,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [on_bind__on绑定事件](JQuery/src/Event/on_bind.html)
 - [x] [Switch__事件切换](JQuery/src/Event/Switch.html)
 - [x] [Ad_display__广告自动显示](JQuery/src/case/Ad_display.html)
+- [x] [lottery__抽奖案例](JQuery/src/case/lottery.html)
 
 - [返回目录](#文件目录)
 
