@@ -232,6 +232,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Traverse__遍历](JQuery/src/Traverse/Traverse.html)
 - [x] [bind__绑定事件](JQuery/src/Event/bind.html)
 - [x] [on_bind__on绑定事件](JQuery/src/Event/on_bind.html)
+- [x] [Switch__事件切换](JQuery/src/Event/Switch.html)
 
 - [返回目录](#文件目录)
 
