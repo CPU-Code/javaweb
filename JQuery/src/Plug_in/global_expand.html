@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery全局进行方法扩展</title>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="UTF-8"></script>
+
+    <script>
+        //对全局方法扩展2个方法，扩展min方法：求2个值的最小值；扩展max方法：求2个值最大值
+        $.extend({
+            max:function (a, b) {
+                //返回两数中的较大值
+                return a >= b ? a : b;
+            },
+            min:function (a, b) {
+                //返回两数中的较小值
+                return a <= b ? a : b;
+            }
+        });
+
+        //返回两数中的较大值
+        var max = $.max(5, 10);
+        alert("max = " + max);
+
+        var min = $.min(1, 6);
+        alert("min = " + min);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
