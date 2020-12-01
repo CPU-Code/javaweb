@@ -246,6 +246,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 ## [AJAX](AJAX)
 
 - [ ] [js_achieve_ajax__js实现ajax](AJAX/web/js/js_achieve_ajax.html)
+- [ ] [jq_achieve_ajax__jq实现ajax](AJAX/web/jq/jq_achieve_ajax.html)
 
 - [返回目录](#文件目录)
 
