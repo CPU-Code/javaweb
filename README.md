@@ -27,6 +27,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [xml](#xml)
 - [tomcat](#tomcat)
 - [JQuery](#JQuery)
+- [AJAX](#AJAX)
 
 ----------------
 
@@ -238,6 +239,14 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [object_expand__jq对象方法扩展](JQuery/src/Plug_in/object_expand.html)
 - [x] [global_expand__jq全局方法扩展](JQuery/src/Plug_in/global_expand.html)
  
+- [返回目录](#文件目录)
+
+----------------
+
+## [AJAX](AJAX)
+
+- [ ] [js_achieve_ajax__js实现ajax](AJAX/web/js/js_achieve_ajax.html)
+
 - [返回目录](#文件目录)
 
 -----------------
