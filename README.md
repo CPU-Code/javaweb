@@ -276,6 +276,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Jedis_string__Jedis操作字符串类型](redis/src/jedis/Jedis_string.java)
 - [x] [Jedis_hash__hash数据结构操作](redis/src/jedis/Jedis_hash.java)
 - [x] [Jedis_list__list数据结构操作](redis/src/jedis/Jedis_list.java)
+- [x] [Jedis_set__set数据结构操作](redis/src/jedis/Jedis_set.java)
 
 - [返回目录](#文件目录)
 
