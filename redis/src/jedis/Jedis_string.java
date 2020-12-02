@@ -1,6 +1,7 @@
 package jedis;
 
 //string 数据结构操作
+// 字符串类型 string
 
 import redis.clients.jedis.Jedis;
 

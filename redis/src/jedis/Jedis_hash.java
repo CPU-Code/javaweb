@@ -1,6 +1,7 @@
 package jedis;
 
 // hash 数据结构操作
+// 哈希类型 hash ： map格式
 
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 import redis.clients.jedis.Jedis;

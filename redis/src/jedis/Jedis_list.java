@@ -1,6 +1,7 @@
 package jedis;
 
 //list 数据结构操作
+// 列表类型 list ： linkedlist格式。支持重复元素
 
 import redis.clients.jedis.Jedis;
 
