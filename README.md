@@ -273,7 +273,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 ## [redis](redis)
 
 - [x] [Jedis_first__第一个redis连接](redis/src/jedis/Jedis_first.java)
-
+- [x] [Jedis_string__Jedis操作字符串类型](redis/src/jedis/Jedis_string.java)
 
 - [返回目录](#文件目录)
 
