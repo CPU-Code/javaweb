@@ -280,6 +280,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [Jedis_sortedset__sortedset数据结构操作](redis/src/jedis/Jedis_sortedset.java)
 - [x] [Jedis_pool__jedis连接池使用](redis/src/pool/Jedis_pool.java)
 - [x] [Use_pool_utils__jedis连接池工具使用](redis/src/pool/Use_pool_utils.java)
+- [ ] [index__省份下拉列表案例](redis/web/index.html)
 
 - [返回目录](#文件目录)
 

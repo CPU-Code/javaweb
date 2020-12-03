@@ -1,4 +1,4 @@
-package jedis;
+package pool;
 
 //jedis连接池使用
 
