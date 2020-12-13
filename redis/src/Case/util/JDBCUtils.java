@@ -20,7 +20,7 @@ public class JDBCUtils {
             Properties pro = new Properties();
 
             //使用ClassLoader加载配置文件，获取字节输入流
-            InputStream is = JDBCUtils.class.getClassLoader().getResourceAsStream("./Case/drui.properties");
+            InputStream is = JDBCUtils.class.getClassLoader().getResourceAsStream("./Case/druid.properties");
             pro.load(is);
 
             //2.初始化连接池对象
