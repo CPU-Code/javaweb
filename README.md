@@ -270,7 +270,9 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 
 ## [El](El)
 
-- [x] [index__第一个jsp](EL/web/index.jsp)
+- [x] [index__jsp转到错误页面](EL/web/index.jsp)
+- [x] [home__jsp导入页面的资源文件](EL/web/home.jsp)
+
 
 - [返回目录](#文件目录)
 
