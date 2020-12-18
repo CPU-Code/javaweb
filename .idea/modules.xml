@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AJAX/AJAX.iml" filepath="$PROJECT_DIR$/AJAX/AJAX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EL/EL.iml" filepath="$PROJECT_DIR$/EL/EL.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/Json/Json.iml" filepath="$PROJECT_DIR$/Json/Json.iml" />
       <module fileurl="file://$PROJECT_DIR$/ajax_demo/ajax_demo.iml" filepath="$PROJECT_DIR$/ajax_demo/ajax_demo.iml" />
