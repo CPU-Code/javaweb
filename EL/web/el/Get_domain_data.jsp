@@ -11,6 +11,14 @@
     <title>el获取域中的数据</title>
 </head>
 <body>
+    <%--
+     ${域名称.键名}：从指定域中获取指定键的值
+    * 域名称：
+        1. pageScope		--> pageContext
+        2. requestScope 	--> request
+        3. sessionScope 	--> session
+        4. applicationScope --> application（ServletContext）
+    --%>
     <%
         //在域中存储数据
         session.setAttribute("name", "cpu");
