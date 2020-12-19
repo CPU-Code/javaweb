@@ -273,6 +273,7 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 - [x] [index__jsp转到错误页面](EL/web/index.jsp)
 - [x] [home__jsp导入页面的资源文件](EL/web/home.jsp)
 - [x] [operator__运算符](EL/web/el/operator.jsp)
+- [x] [Get_domain_data__获取域的数据](EL/web/el/Get_domain_data.jsp)
 
 - [返回目录](#文件目录)
 
