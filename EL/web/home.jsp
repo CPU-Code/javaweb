@@ -45,6 +45,6 @@ include	： 页面包含的。导入页面的资源文件
         pageContext.setAttribute("msg", "cpu");
     %>
 
-    <%=pageContext.getAttribute("msg")%>>
+    <%=pageContext.getAttribute("msg")%>
 </body>
 </html>
