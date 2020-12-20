@@ -283,6 +283,8 @@ HTML , css , JavaScript , BootStrap , XML ,AJAX , CGI 编程
 
 ## [JSTL](JSTL)
 
+- [ ] [If_tag__判断标签](JSTL/web/jstl/If_tag.jsp)
+- [ ] [Choose_tag__选择标签](JSTL/web/jstl/Choose_tag.jsp)
 
 - [返回目录](#文件目录)
 

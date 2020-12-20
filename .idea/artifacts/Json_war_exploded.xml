@@ -2,12 +2,18 @@
   <artifact type="exploded-war" name="Json:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Json_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Json/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Json" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="JUnit4" module-name="Json" />
+          <element id="file-copy" path="$PROJECT_DIR$/Json/web/WEB-INF/lib/jackson-core-2.2.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Json/web/WEB-INF/lib/jackson-databind-2.2.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Json/web/WEB-INF/lib/jackson-annotations-2.2.3.jar" />
+        </element>
       </element>
+      <element id="javaee-facet-resources" facet="Json/web/Web" />
     </root>
   </artifact>
 </component>
