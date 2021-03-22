@@ -5,9 +5,12 @@
 - [x] [const__模板字符串](const.html)
 - [x] [const2__字符串反引号](const2.html)
 - [x] [function__对象初始化](function.html)
+
 - [x] [array__数组解构](array.html)
 - [x] [object__对象解构](object.html)
 - [x] [copyObject__拷贝对象](copyObject.html)
+
+- [x] [arrow__箭头函数](arrow.html)
 
 -----------------
 
