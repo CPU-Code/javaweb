@@ -11,7 +11,6 @@
 
 -----------------
 
-
 初始化
 
 ```shell script
@@ -93,6 +92,20 @@ npm install webpack-cli -g
 
 ```shell script
 webpack -v
+```
+
+---------------------
+
+
+安装相关Loader插件
+```shell script
+npm install style-loader css-loader --save-dev
+```
+
+将模块安装到项目目录下
+
+```shell script
+npm install less less-loader --save-dev
 ```
 
 
