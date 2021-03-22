@@ -1,0 +1,33 @@
+<!--
+  @dauthor : cpucode
+  @date : 2021/3/22
+  @time : 20:09
+  @github : https://github.com/CPU-Code
+  @csdn : https://blog.csdn.net/qq_44226094
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        function person5(name, age){
+            return {name:name, age:age};
+        }
+
+        console.log("es5 => " + JSON.stringify(person5("cpucode", 13)) );
+
+        function person6(name, age){
+            //属性和值是同名的则可以省略为如下：
+            return {name, age}
+        }
+        console.log("es6 => " + JSON.stringify(person6("cpucode", 13)) );
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
