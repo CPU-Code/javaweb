@@ -11,6 +11,7 @@
 - [x] [copyObject__拷贝对象](copyObject.html)
 
 - [x] [arrow__箭头函数](arrow.html)
+- [x] [parameterArrow__多参数箭头函数](parameterArrow.html)
 
 -----------------
 
