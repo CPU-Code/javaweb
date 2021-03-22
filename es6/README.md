@@ -15,11 +15,13 @@
 - [x] [bracketsArrow__括号箭头函数](bracketsArrow.html)
 - [ ] [__函数属性简写](.html)
 - [ ] [__箭头函数结合解构](.html)
+
 - [ ] [__map](.html)
 - [ ] [__reduce](.html)
 - [ ] [__promise](.html)
 - [ ] [__对象扩展](.html)
 - [ ] [__数组扩展](.html)
+
 - [ ] [__babel](.html)
 - [ ] [__命名导出](.html)
 - [ ] [__默认导出](.html)
