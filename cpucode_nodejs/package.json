@@ -1,12 +1,15 @@
 {
   "name": "cpucode_nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "- [x] [demo__加法控制台输出](node/demo.js)\r - [x] [function__函数调用](node/function.js)\r - [x] [require__模块](node/module/require.js)\r - [x] [http__web服务器](node/http.js)\r - [x] [forHttp__服务端渲染](node/forHttp.js)\r - [x] [parameter__接收参数](node/parameter.js)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
