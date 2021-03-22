@@ -1,6 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%--
   User: cpucode
   Date: 2020/12/20
@@ -8,7 +9,9 @@
   Github: https://github.com/CPU-Code
   CSDN: https://blog.csdn.net/qq_44226094
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>循环标签</title>
