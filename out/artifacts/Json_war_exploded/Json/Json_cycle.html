@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json循环遍历</title>
+
+    <script>
+        //1.定义基本格式
+        var person = {"name":"cpu", age: 21, "gender": true};
+
+        var ps = [
+            {"name":"cpu", "age": 22, "gender":false},
+            {"name":"cpu_code", "age": 33, "gender": true},
+            {"name": "王五", "age": 25, "gender": false}
+        ];
+
+        //获取person对象中所有的键和值
+        //for in 循环
+        for(var key in person){
+             //这样的方式获取不行。因为相当于  person."name"
+             //alert(key + ":" + person.key);
+             alert(key + ":" + person[key]);
+        }
+
+        //获取ps中的所有值
+        for (var i = 0; i <ps.length; i++){
+            var p = ps[i];
+            
+            for (var key in p){
+                alert(key + ":" + p[key]);
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

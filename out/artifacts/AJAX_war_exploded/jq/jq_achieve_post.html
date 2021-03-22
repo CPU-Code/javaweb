@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq实现post</title>
+    <script src="./lib/jquery-3.3.1.min.js"></script>
+
+    <!--
+    $.post()：发送post请求
+    * 语法：$.post(url, [data], [callback], [type])
+        * 参数：
+            * url：请求路径
+            * data：请求参数
+            * callback：回调函数
+            * type：响应结果的类型
+    -->
+    <script>
+        //定义方法
+        function fun() {
+            $.post("../ajax_servlet",{username:"cpu_post"},function (data) {
+                alert("data = " + data);
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="发送异步post请求" onclick="fun();">
+
+    <input>
+</body>
+</html>
