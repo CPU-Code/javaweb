@@ -75,7 +75,25 @@ cnpm install
 ```
 
 --------------------
- 
+
+**Webpack安装**
+
+全局安装
+
+```shell script
+npm install webpack -g
+```
+
+```shell script
+npm install webpack-cli -g
+```
+
+查看版本号
+
+```shell script
+webpack -v
+```
+
 
 - [返回文件顶部](../README.md)
 
