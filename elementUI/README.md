@@ -8,6 +8,7 @@
 - [x] [pagination__分页](src/pagination.html)
 - [x] [message__消息提示](src/message.html)
 - [x] [tabs__标签页](src/tabs.html)
+- [x] [form__表单](src/form.html)
 
 -----------------
 
