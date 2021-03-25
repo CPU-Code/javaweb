@@ -5,6 +5,7 @@
 - [x] [dropdown__ 下拉菜单](src/dropdown.html)
 - [x] [navmenu__ 导航菜单](src/navmenu.html)
 - [x] [table__表格](src/table.html)
+- [x] [pagination__分页](src/pagination.html)
 
 -----------------
 
