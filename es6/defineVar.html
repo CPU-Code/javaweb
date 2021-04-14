@@ -1,0 +1,46 @@
+<!--
+ * @由于个人水平有限, 难免有些错误, 还请指点:  
+ * @Author: cpu_code
+ * @Date: 2021-04-14 12:12:37
+ * @LastEditTime: 2021-04-14 12:16:11
+ * @FilePath: \es6\defineVar.html
+ * @Gitee: [https://gitee.com/cpu_code](https://gitee.com/cpu_code)
+ * @Github: [https://github.com/CPU-Code](https://github.com/CPU-Code)
+ * @CSDN: [https://blog.csdn.net/qq_44226094](https://blog.csdn.net/qq_44226094)
+ * @Gitbook: [https://923992029.gitbook.io/cpucode/](https://923992029.gitbook.io/cpucode/)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es6 测试</title>
+
+</head>
+<body>
+    <script>
+        // var 声明的变量没有局部作用域
+        // let 声明的变量  有局部作用域
+        {
+            var a = 1;
+            let b = 2;
+        }
+
+        console.log(a)
+        console.log(b)
+
+        // var 可以声明多次
+        // let 只能声明一次
+        var m = 1;
+        var m = 2;
+        
+        let n = 10;
+        let n = 20;  
+        
+        console.log(m)
+        console.log(n)
+
+
+    </script>
+</body>
+</html>
